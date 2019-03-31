@@ -136,16 +136,16 @@ ul {
 
 ul {
   list-style: none;
-  /*убираем маркеры списка*/
+
   margin: 0;
-  /*убираем верхнее и нижнее поле, равное 1em*/
+
   padding-left: 0;
-  /*убираем левый отступ, равный 40px*/
+ 
 }
 
 a {
   text-decoration: none;
-  /*убираем подчеркивание текста ссылок*/
+
 
 }
 
@@ -243,10 +243,9 @@ footer {
   position: relative;
   height: 80px;
   
-  height: 77px;
-  margin-top: 70px;
 
-  margin: 0px;
+  margin-top: 70px;
+margin: 0px;
   width: 100%;
 }
 
