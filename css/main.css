@@ -237,10 +237,12 @@ h1 {
 
 
 footer {
+  display: flex;
+  align-items: flex-end;
   background-color: rgb(148, 37, 37);
   position: relative;
   height: 80px;
-  display: inline-block;
+  
   height: 77px;
   margin-top: 70px;
 
@@ -403,3 +405,4 @@ margin-top: 10px;
  .maincontent__part-two {
    width: 100%;
  }
+
