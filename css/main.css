@@ -136,16 +136,16 @@ ul {
 
 ul {
   list-style: none;
-  /*убираем маркеры списка*/
+
   margin: 0;
-  /*убираем верхнее и нижнее поле, равное 1em*/
+
   padding-left: 0;
-  /*убираем левый отступ, равный 40px*/
+ 
 }
 
 a {
   text-decoration: none;
-  /*убираем подчеркивание текста ссылок*/
+
 
 }
 
@@ -232,18 +232,20 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 0.776;
+  margin-top: 60px;
 }
 
 
 footer {
+  display: flex;
+  align-items: flex-end;
   background-color: rgb(148, 37, 37);
   position: relative;
   height: 80px;
-  display: inline-block;
-  height: 77px;
-  margin-top: 70px;
+  
 
-  margin: 0px;
+  margin-top: 70px;
+margin: 0px;
   width: 100%;
 }
 
@@ -347,17 +349,16 @@ footer__logo {
 }
 
 .maincontent container {
-  position: relative;
+  
   width: 1060px;
 }
 
 .last-news {
   margin-top: 70px;
+  display: inline-block;
 }
 
-.last-news__list {
-  margin-top: 70px;
-}
+
 
 .last-news__item {
   display: flex;
@@ -389,7 +390,10 @@ margin-top: 10px;
 }
 .sidebar {
   float: right;
-  
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin-top: 170px;
 }
 .img_sid {
   text-align: right;
@@ -397,3 +401,7 @@ margin-top: 10px;
 .news__list-item {
   display: list-item;
 }
+ .maincontent__part-two {
+   width: 100%;
+ }
+
