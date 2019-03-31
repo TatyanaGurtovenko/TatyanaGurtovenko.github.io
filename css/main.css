@@ -43,10 +43,8 @@ header .container {
   margin-top: 120px;
 }
 
-li {
+.nav__item, .social__icon {
   display: inline-table;
-
-
 }
 
 .logo,
@@ -128,7 +126,7 @@ ul {
 
 .maincontent {
   background-color: white;
-  
+
 
 }
 
@@ -136,16 +134,16 @@ ul {
 
 ul {
   list-style: none;
-
+  /*убираем маркеры списка*/
   margin: 0;
-
+  /*убираем верхнее и нижнее поле, равное 1em*/
   padding-left: 0;
- 
+  /*убираем левый отступ, равный 40px*/
 }
 
 a {
   text-decoration: none;
-
+  /*убираем подчеркивание текста ссылок*/
 
 }
 
@@ -237,29 +235,38 @@ h1 {
 
 
 footer {
-  display: flex;
-  align-items: flex-end;
-  background-color: rgb(148, 37, 37);
-  position: relative;
-  height: 80px;
-  
-
-  margin-top: 70px;
-margin: 0px;
   width: 100%;
+  height: 77px;
+  background: #4b73b5;
+  min-width: 1100px;
+  margin-top: 70px;
 }
 
 .footer__text {
-  display: inline-block;
+  font-family: Roboto;
+  font-size: 14px;
   width: 260;
   height: 100;
+  text-align: left;
+  margin: 0;
 }
 
-footer__logo {
+.footer__logo {
   left: 800px;
   text-align: center;
 
   display: inline-block;
+}
+.footer__container {
+  width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 20px;
+}
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .social__list {
@@ -270,19 +277,50 @@ footer__logo {
   line-height: 3.857;
 }
 
-
-.pagination {
-  display: flex align-items: center;
-  ;
-  height: 20px;
-  width: 100%;
-  transform: translate(400px);
+.pagination__next {
+  padding-left: 15px;
 }
-
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 72px;
+}
+.pagination__display, .pagination__prev {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(101, 100, 100);
+    line-height: 1.5;
+    text-align: left;
+    -moz-transform: matrix( 1.00122601572696,0,0,1,0,0);
+    -webkit-transform: matrix( 1.00122601572696,0,0,1,0,0);
+    -ms-transform: matrix( 1.00122601572696,0,0,1,0,0);
+}
 .pagination__controls {
   display: flex;
 }
+.pagination__link {
+  margin-left: 15px;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(34, 31, 31);
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    -moz-transform: matrix( 1.00122601572696,0,0,1,0,0);
+    -webkit-transform: matrix( 1.00122601572696,0,0,1,0,0);
+    -ms-transform: matrix( 1.00122601572696,0,0,1,0,0);
+  }
+.pagination__pages {
+  display: flex;
+  justify-content: center
+}
 
+
+.pagination__prev {
+  padding-left: 10px;
+}
 .social__element-pic {
   background-color: cadetblue;
 }
@@ -349,7 +387,7 @@ footer__logo {
 }
 
 .maincontent container {
-  
+
   width: 1060px;
 }
 
@@ -380,28 +418,42 @@ footer__logo {
 
 .last-news__title {
   color: #221f1f;
-font-weight: bold;
-margin-bottom: 9px;
-font-size: 16px;
-margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 9px;
+  font-size: 16px;
+  margin-top: 10px;
 }
+
 .last-news__text {
   width: 610px;
 }
+
 .sidebar {
   float: right;
   display: inline-block;
   vertical-align: top;
   padding: 0;
-  margin-top: 170px;
+  margin-top: 40px;
 }
+
 .img_sid {
   text-align: right;
 }
+
 .news__list-item {
   display: list-item;
 }
- .maincontent__part-two {
-   width: 100%;
- }
 
+.maincontent__part-two {
+  width: 100%;
+}
+
+.social__icon {
+
+  text-align: center;
+  width: 10px;
+  height: 10px;
+  float: left;
+  background-image: url border-radius: 50%;
+color: #000;
+}
