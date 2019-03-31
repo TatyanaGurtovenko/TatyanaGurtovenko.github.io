@@ -232,6 +232,7 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 0.776;
+  margin-top: 60px;
 }
 
 
@@ -347,17 +348,16 @@ footer__logo {
 }
 
 .maincontent container {
-  position: relative;
+  
   width: 1060px;
 }
 
 .last-news {
   margin-top: 70px;
+  display: inline-block;
 }
 
-.last-news__list {
-  margin-top: 70px;
-}
+
 
 .last-news__item {
   display: flex;
@@ -389,7 +389,10 @@ margin-top: 10px;
 }
 .sidebar {
   float: right;
-  
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin-top: 170px;
 }
 .img_sid {
   text-align: right;
@@ -397,6 +400,6 @@ margin-top: 10px;
 .news__list-item {
   display: list-item;
 }
-.maincontent__part-two {
-  
-}
+ .maincontent__part-two {
+   width: 100%;
+ }
