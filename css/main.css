@@ -1,0 +1,349 @@
+@font-face {
+  font-family: 'gora_free';
+  src: url('../css/fonts/gora-free-webfont.woff2') format('woff2'),
+    url('../css/fonts/gora-free-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.header {
+  position: relative;
+  background: black;
+  height: 74px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+header .container {
+  position: relative;
+  height: 77px;
+  margin-bottom: 75px;
+}
+
+.contacts {
+  text-align: right;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.headline__features {
+  margin-bottom: 60px;
+  margin-top: 120px;
+}
+
+li {
+  display: inline-table;
+
+
+}
+
+.logo,
+.contacts,
+.nav {
+  display: inline-block;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.nav {
+  position: absolute;
+  top: 20px;
+  left: 410px;
+  right: 380;
+
+}
+
+ul {
+  border-spacing: 10px;
+}
+
+
+
+.nav__title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-size: 18px;
+  font-family: "Gora Free";
+  color: rgb(248, 149, 19);
+  text-transform: uppercase;
+  line-height: 3;
+
+
+  position: absolute;
+  top: 10px;
+  left: 100px;
+
+}
+
+.features {
+  display: inline-table;
+  background-color: black;
+  width: 100%;
+  
+}
+
+}
+
+.main__pict {
+  width: 1100px;
+  height: 626px;
+  margin-right: 180spx;
+  margin-left: 172px;
+  margin-top: 155px;
+  margin-bottom: 1660px;
+
+}
+
+.main__pict-img {
+  text-align: center;
+
+  display: block;
+  margin: auto;
+
+}
+
+.maincontent {
+  background-color: white;
+  
+  width: 100%;
+
+}
+
+
+
+ul {
+  list-style: none;
+  /*убираем маркеры списка*/
+  margin: 0;
+  /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0;
+  /*убираем левый отступ, равный 40px*/
+}
+
+a {
+  text-decoration: none;
+  /*убираем подчеркивание текста ссылок*/
+
+}
+
+.nav__icon-main {
+  background: url(../img/menu_icon/main_icon.png) 0 0 no-repeat;
+  width: 19px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.nav__icon-rev {
+  background: url(../img/menu_icon/feed_icon.png) 0 0 no-repeat;
+  width: 20px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 10spx;
+}
+
+.nav__icon-ser {
+  background: url(../img/menu_icon/service_icon.png) 0 0 no-repeat;
+  width: 19px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.company-contact__phone {
+  font-size: 21px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.company-contacts__shedule {
+  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: rgba(248, 149, 19, 0.702);
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 2.571;
+
+}
+
+
+
+
+h3 {
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: black;
+  text-transform: uppercase;
+  -moz-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
+  -webkit-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
+  -ms-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
+}
+
+
+
+.news__item-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.news__desc {
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+h1 {
+  text-align: center;
+  font-size: 49px;
+  font-family: "Open Sans";
+  color: rgb(34, 31, 31);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.776;
+}
+
+
+footer {
+  background-color: rgb(148, 37, 37);
+  position: relative;
+  height: 80px;
+  display: inline-block;
+  height: 77px;
+  margin-top: 70px;
+
+  margin: 0px;
+  width: 100%;
+}
+
+.footer__text {
+  display: inline-block;
+  width: 260;
+  height: 100;
+}
+
+footer__logo {
+  left: 800px;
+  text-align: center;
+
+  display: inline-block;
+}
+
+.social__list {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(121, 15, 15);
+  font-weight: bold;
+  line-height: 3.857;
+}
+
+
+.pagination {
+  display: flex align-items: center;
+  ;
+  height: 20px;
+  width: 100%;
+  transform: translate(400px);
+}
+
+.pagination__controls {
+  display: flex;
+}
+
+.social__element-pic {
+  background-color: cadetblue;
+}
+
+.features__section-icon {
+  margin: 0 auto;
+  background-color: rgb(248, 149, 19);
+  line-height: 90px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  width: 66px;
+  height: 66px;
+}
+
+.features__section {
+  margin-right: 20px;
+  float: left;
+  padding: 25px;
+  width: 250px;
+  height: 456px;
+  text-align: center;
+}
+
+.headline__features {
+  position: relative;
+  color: white;
+
+}
+.features-section__text {
+    font-size: 12px;
+    font-family: "Open Sans";
+    color: white;
+    text-transform: uppercase;
+    line-height: 4.767;
+    text-align: center;
+    -moz-transform: matrix( 0.89709304898013,0,0,0.89821428571429,0,0);
+    -webkit-transform: matrix( 0.89709304898013,0,0,0.89821428571429,0,0);
+    -ms-transform: matrix( 0.89709304898013,0,0,0.89821428571429,0,0);
+  
+}
+.features-section__par {
+  
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+    text-align: center;
+    -moz-transform: matrix( 0.89709304898013,0,0,0.89821428571429,0,0);
+    -webkit-transform: matrix( 0.89709304898013,0,0,0.89821428571429,0,0);
+    -ms-transform: matrix( 0.89709304898013,0,0,0.89821428571429,0,0);
+  }
+  .features-section__list {
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+    text-align: center;
+    -moz-transform: matrix( 0.89709304898013,0,0,0.89821428571429,0,0);
+    -webkit-transform: matrix( 0.89709304898013,0,0,0.89821428571429,0,0);
+    -ms-transform: matrix( 0.89709304898013,0,0,0.89821428571429,0,0);
+  }
+  .maincontent container {
+    position: relative;
+    width: 1060px;
+  }
