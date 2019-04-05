@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'gora_free';
-  src: url('../css/fonts/gora-free-webfont.woff2') format('woff2'),
-    url('../css/fonts/gora-free-webfont.woff') format('woff');
+  src: url('/folder/fonts/gora-free-webfont.woff2') format('woff2'),
+    url('/folder/fonts/gora-free-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
