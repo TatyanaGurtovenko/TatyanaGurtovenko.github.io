@@ -1,0 +1,29 @@
+.header {
+  position: relative;
+  background-color: black;
+  height: 74px;
+}
+
+.header-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: orange;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__item {
+  margin: 0 10px 0 0;
+}
+
+.company-contacts__shedule {
+  color: orange;
+  text-align: right;
+}

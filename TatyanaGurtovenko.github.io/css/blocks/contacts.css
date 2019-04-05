@@ -1,0 +1,17 @@
+.company-contact__phone {
+  font-size: 21px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+
+.company-contacts__shedule {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgba(248, 149, 19, 0.702);
+  font-weight: bold;
+  text-decoration: underline;
+  
+}
