@@ -1,0 +1,36 @@
+.breadcrumbs {
+  margin-left: 90px;
+}
+
+
+.breadcrumbs__item {
+  vertical-align: middle;
+  display: inline-flex;
+}
+
+
+
+.breadcrumbs__item:after {
+  content: "/";
+  display: inline-flex;
+  vertical-align: middle;
+  margin-left: 4px;
+
+}
+
+.breadcrumbs__item:last-child:after {
+  display: none;
+}
+
+.breadcrumbs__link {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.breadcrumbs__link:first-child {
+  font-size: 14px;
+  font-family: "OpenSansLight";
+  color: rgba(248, 149, 19, 0.8);
+  font-style: italic;
+  text-decoration: underline;
+}

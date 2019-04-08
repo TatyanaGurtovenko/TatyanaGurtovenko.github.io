@@ -12,13 +12,14 @@
 
 .news__blocks {
   display: flex;
+  justify-content: space-between;
 }
 
 .news__item {
   display: flex;
   align-items: flex-start;
   padding: 30px 0 30px 0;
-  margin-right: 20px;
+  
   border-bottom: 2px solid rgb(245, 245, 245);
 }
 
