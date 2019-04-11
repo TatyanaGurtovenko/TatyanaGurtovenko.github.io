@@ -1,0 +1,27 @@
+.socials__list {
+  display: flex;
+  margin-top: 10px;
+}
+
+.socials__item {
+  margin: 0 10px 0 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.socials__text {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}

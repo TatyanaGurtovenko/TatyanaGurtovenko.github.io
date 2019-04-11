@@ -1,0 +1,22 @@
+.partners__list {
+ height: 190px;
+  width: 760px;
+  margin-left: 70px;
+}
+.partners__items {
+  display:inline-flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-right: 130px;
+  margin-bottom: 47px;
+  align-items: stretch;
+}
+.services__title-partners {
+  font-size: 49px;
+  font-family: "Open Sans";
+  color: rgb(34, 31, 31);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 55px;
+  margin-bottom: 85px;
+}
