@@ -1,16 +1,16 @@
-@import url('./layout/normalize.css');
-@import url('./layout/fonts.css');
-@import url('./blocks/base.css');
-@import url('./blocks/header.css');
-@import url('./blocks/logo.css');
-@import url('./blocks/nav.css');
-@import url('./blocks/contacts.css');
-@import url('./blocks/pagination-comments.css');
-@import url('./blocks/socials.css');
-@import url('./blocks/footer.css');
-@import url('./blocks/breadcrumbs.css');
-@import url('./blocks/reviews__content.css');
-@import url('./blocks/rewiews__services.css');
-@import url('./blocks/feedback.css');
+@import url("./layout/normalize.css");
+@import url("./layout/fonts.css");
+@import url("./blocks/base.css");
+@import url("./blocks/header.css");
+@import url("./blocks/logo.css");
+@import url("./blocks/nav.css");
+@import url("./blocks/contacts.css");
+@import url("./blocks/pagination-comments.css");
+@import url("./blocks/socials.css");
+@import url("./blocks/footer.css");
+@import url("./blocks/breadcrumbs.css");
+@import url("./blocks/reviews__content.css");
+@import url("./blocks/rewiews__services.css");
+@import url("./blocks/feedback.css");
 
 
