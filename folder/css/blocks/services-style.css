@@ -11,6 +11,17 @@
   flex-wrap: wrap;
 }
 
+.subtitle {
+  line-height: 1;
+  margin-top: 30px;
+  margin-bottom: 13px;
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: bold;
+
+
+}
+
 .services__item {
   display: flex;
   flex-direction: column;
@@ -30,11 +41,15 @@
   font-family: "Open Sans";
   color: rgb(34, 31, 31);
   font-weight: bold;
+  width: 265px;
+  letter-spacing: -0.9px;
+  line-height: 21.02px;
 }
 
 .services {
   margin-left: 110px;
 }
+
 .services__blocks {
- margin-bottom: 30px;
+  margin-bottom: 30px;
 }

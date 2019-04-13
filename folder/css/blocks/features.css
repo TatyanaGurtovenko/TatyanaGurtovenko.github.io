@@ -18,22 +18,14 @@
   margin: 0;
 }
 
-
-
 .features__list {
   display: flex;
   justify-content: center;
   color: #fff;
-  padding-left: 180px;
-  padding-right: 180px;
 }
 
 .features__item {
-  width: 200px;
-  padding-right: 70px;
-}
-.features__list:last-child {
-  padding-right:0;
+  width: 260px;
 }
 
 .features__image {
@@ -60,8 +52,7 @@
   -ms-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
   letter-spacing: 0.24em;
   margin-top: 0;
-  line-height:1;
-  
+  line-height: 1;
 }
 
 .features__text {
@@ -76,7 +67,6 @@
 }
 
 .features__sublist-item {
-
   position: relative;
   padding: 0 0 0 20px;
   font-size: 20px;

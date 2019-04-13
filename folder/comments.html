@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Reviews</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:800i" rel="stylesheet">
-  <link rel="stylesheet" href="/folder/css/comments.css">
+  <link rel="stylesheet" href="/css/comments.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             <ul class="nav">
               <li class="nav__item">
                 <a href="https://tatyanagurtovenko.github.io/folder/inner" class="nav__link">
-                  <img src="/folder/img/menu_icon/main_icon.png" alt="" class="nav__icon" />
+                  <img src="/img/menu_icon/main_icon.png" alt="" class="nav__icon" />
                   <span class="nav__title">
                     Главная
                   </span>
@@ -28,7 +28,7 @@
               </li>
               <li class="nav__item">
                 <a href="https://tatyanagurtovenko.github.io/folder/inner/comments" class="nav__link">
-                  <img src="/folder/img/menu_icon/feed_icon.png" alt="" class="nav__icon" />
+                  <img src="/img/menu_icon/feed_icon.png" alt="" class="nav__icon" />
                   <span class="nav__title">
                     Отзывы
                   </span>
@@ -36,7 +36,7 @@
               </li>
               <li class="nav__item">
                 <a href="https://tatyanagurtovenko.github.io/folder/inner/services" class="nav__link">
-                  <img src="/folder/img/menu_icon/service_icon.png" alt="" class="nav__icon" />
+                  <img src="/img/menu_icon/service_icon.png" alt="" class="nav__icon" />
                   <span class="nav__title">
                     Услуги
                   </span>
@@ -57,10 +57,12 @@
           <div class="container">
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item">
-                <a href="https://tatyanagurtovenko.github.io/folder/inner" class="breadcrumbs__comments-main">Главная</a>
+                <a href="https://tatyanagurtovenko.github.io/folder/inner"
+                  class="breadcrumbs__comments-main">Главная</a>
               </li>
               <li class="breadcrumbs__item">
-                <a href="https://tatyanagurtovenko.github.io/folder/inner/comments" class="breadcrumbs__comments-rewiews">Отзывы</a>
+                <a href="https://tatyanagurtovenko.github.io/folder/inner/comments"
+                  class="breadcrumbs__comments-rewiews">Отзывы</a>
               </li>
             </ul>
             <div class="reviews__content">
@@ -69,7 +71,7 @@
                 <ul class="reviews__list">
                   <li class="reviews__item">
                     <div class="reviews__image">
-                      <img src="/folder/img/reviews/bbqf8j1xb6u-han-vi-ph-m-th.png" alt="" class="reviews__image-pic" />
+                      <img src="/img/reviews/bbqf8j1xb6u-han-vi-ph-m-th.png" alt="" class="reviews__image-pic" />
                     </div>
                     <div class="reviews__description">
                       <p class="reviews__date">12.10.2016</p>
@@ -86,7 +88,7 @@
                   </li>
                   <li class="reviews__item">
                     <div class="reviews__image">
-                      <img src="/folder/img/reviews/k6uxppff8rs-han-vi-ph-m-th.png" alt="" class="reviews__image-pic" />
+                      <img src="/img/reviews/k6uxppff8rs-han-vi-ph-m-th.png" alt="" class="reviews__image-pic" />
                     </div>
                     <div class="reviews__description">
                       <p class="reviews__date">01.02.2016</p>
@@ -104,7 +106,7 @@
                   </li>
                   <li class="reviews__item">
                     <div class="reviews__image">
-                      <img src="/folder/img/reviews/Vector Smart Object.png" alt="" class="reviews__image-pic" />
+                      <img src="/img/reviews/Vector Smart Object.png" alt="" class="reviews__image-pic" />
                     </div>
                     <div class="reviews__description">
                       <p class="reviews__date">22.12.2015</p>
@@ -121,7 +123,7 @@
                   </li>
                   <li class="reviews__item">
                     <div class="reviews__image">
-                      <img src="/folder/img/reviews/kblifrq1jkg-scott-webb.png" alt="" class="reviews__image-pic" />
+                      <img src="/img/reviews/kblifrq1jkg-scott-webb.png" alt="" class="reviews__image-pic" />
                     </div>
                     <div class="reviews__description">
                       <p class="reviews__date">14.08.2015</p>
@@ -146,7 +148,9 @@
                 <div class="pagination__controls">
                   <a href="" class="pagination__prev">
                     <</a> <ul class="pagination__pages">
-                      <li><a href="#" class="pagination__link">1</a></li>
+                      <li>
+                        <a href="#" class="pagination__link pagination__link-active">1</a>
+                      </li>
                       <li><a href="#" class="pagination__link">2</a></li>
                       <li><a href="#" class="pagination__link">3</a></li>
                       <li><a href="#" class="pagination__link">4</a></li>
@@ -169,7 +173,7 @@
                 мы предоставляем консультации профессиональных диетологов,
                 тренеров, психологов. Также есть кабинет массажа,
                 зал спа рядом с бассейном и возможность арендовать центр для проведения массовых мероприятий.
-               <strong>Ждем ваших заявок!</strong> </p>
+                <strong class="application">Ждем ваших заявок!</strong> </p>
             </div>
           </div>
         </aside>
@@ -189,7 +193,7 @@
                       <input type="text" class="input__link" placeholder="vk.com/example">
                     </p>
                   </form>
-                  <form name="reviews" action="#" class="form__reviews" >
+                  <form name="reviews" action="#" class="form__reviews">
                     <p><b class="reviews__text">Текст отзыва</b><br>
                       <textarea type="text" class="input__text" placeholder="Мне понравилось"></textarea>
                     </p>
@@ -231,27 +235,27 @@
                 <ul class="socials__list">
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <img src="/folder/img/social network/vk.png" alt="" class="socials__icon" />
+                      <img src="/img/social network/vk.png" alt="" class="socials__icon" />
                     </a>
                   </li>
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <img src="/folder/img/social network/fb.png" alt="" class="socials__icon" />
+                      <img src="/img/social network/fb.png" alt="" class="socials__icon" />
                     </a>
                   </li>
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <img src="/folder/img/social network/google.png" alt="" class="socials__icon" />
+                      <img src="/img/social network/google.png" alt="" class="socials__icon" />
                     </a>
                   </li>
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <img src="/folder/img/social network/twitter.png" alt="" class="socials__icon" />
+                      <img src="/img/social network/twitter.png" alt="" class="socials__icon" />
                     </a>
                   </li>
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <img src="/folder/img/social network/mail.png" alt="" class="socials__icon" />
+                      <img src="/img/social network/mail.png" alt="" class="socials__icon" />
                     </a>
                   </li>
                 </ul>

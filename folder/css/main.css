@@ -1,14 +1,13 @@
-@import url('/folder/css/blocks/base.css');
-@import url('/folder/css/blocks/header.css');
-@import url('/folder/css/blocks/logo.css');
-@import url('/folder/css/blocks/nav.css');
-@import url('/folder/css/blocks/contacts.css');
-@import url('/folder/css/blocks/banner.css');
-@import url('/folder/css/blocks/features.css');
-@import url('/folder/css/blocks/news.css');
-@import url('/folder/css/blocks/footer.css');
-@import url('/folder/css/blocks/pagination.css');
-@import url('/folder/css/blocks/socials.css');
-@import url('/folder/css/layout/fonts.css');
-@import url('/folder/css/layout/normalize.css');
-
+@import url("./layout/normalize.css");
+@import url("./layout/fonts.css");
+@import url("./blocks/base.css");
+@import url("./blocks/header.css");
+@import url("./blocks/logo.css");
+@import url("./blocks/nav.css");
+@import url("./blocks/contacts.css");
+@import url("./blocks/banner.css");
+@import url("./blocks/features.css");
+@import url("./blocks/news.css");
+@import url("./blocks/footer.css");
+@import url("./blocks/pagination-main.css");
+@import url("./blocks/socials.css");

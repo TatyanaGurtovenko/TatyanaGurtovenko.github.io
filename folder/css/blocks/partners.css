@@ -1,15 +1,14 @@
 .partners__list {
- height: 190px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 760px;
-  margin-left: 70px;
+  padding: 0 0 0 70px;
 }
+
 .partners__items {
-  display:inline-flex;
-  justify-content: space-around;
-  flex-direction: row;
-  margin-right: 130px;
-  margin-bottom: 47px;
-  align-items: stretch;
+  width: 30%;
+  margin-bottom: 30px;
 }
 .services__title-partners {
   font-size: 49px;

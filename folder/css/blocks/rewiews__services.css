@@ -1,7 +1,9 @@
 .services {
   height: 170px;
-  background-image: url('/folder/img/background.png');
+  background-image: url('/img/background.png');
   margin-bottom: 60px;
+  width: 100%;
+  margin-top: 60px;
 }
 
 .services__text {
@@ -18,9 +20,13 @@
 }
 .services__text-content {
   box-sizing: border-box;
+ 
   
 }
 .input__text {
   border: solid 1px orange;
   padding: 5px 10px;
+}
+.application {
+  color: rgb(248, 149, 19);
 }

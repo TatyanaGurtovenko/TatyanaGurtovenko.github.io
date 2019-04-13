@@ -24,6 +24,10 @@
   margin: 0 10px 0 0;
 }
 
+.nav__link:hover .nav__title {
+  color: orange;
+}
+
 .company-contacts__shedule {
   color: orange;
   text-align: right;
