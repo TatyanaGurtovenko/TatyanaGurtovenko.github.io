@@ -1,16 +1,16 @@
-@import url('/css/layout/normalize.css');
-@import url('/css/layout/fonts.css');
-@import url('/css/blocks/base.css');
-@import url('/css/blocks/header.css');
-@import url('/css/blocks/logo.css');
-@import url('/css/blocks/nav.css');
-@import url('/css/blocks/contacts.css');
-@import url('/css/blocks/pagination-comments.css');
-@import url('/css/blocks/socials.css');
-@import url('/css/blocks/footer.css');
-@import url('/css/blocks/breadcrumbs.css');
-@import url('/css/blocks/reviews__content.css');
-@import url('/css/blocks/rewiews__services.css');
-@import url('/css/blocks/feedback.css');
+@import url('./layout/normalize.css');
+@import url('./layout/fonts.css');
+@import url('./blocks/base.css');
+@import url('./blocks/header.css');
+@import url('./blocks/logo.css');
+@import url('./blocks/nav.css');
+@import url('./blocks/contacts.css');
+@import url('./blocks/pagination-comments.css');
+@import url('./blocks/socials.css');
+@import url('./blocks/footer.css');
+@import url('./blocks/breadcrumbs.css');
+@import url('./blocks/reviews__content.css');
+@import url('./blocks/rewiews__services.css');
+@import url('./blocks/feedback.css');
 
 
