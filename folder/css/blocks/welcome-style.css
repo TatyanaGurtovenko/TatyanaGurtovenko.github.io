@@ -1,0 +1,72 @@
+.wrapper__welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/welcome/gym-595597_1920.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome__content {
+  animation: intro 1.3s;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.welcome__logo {
+  background-image: url(/img/welcome/logo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 160px;
+  height: 195px;
+  margin-bottom: 40px;
+}
+.welcome__button-go {
+  width: 172px;
+  height: 45px;
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color:rgb(248, 149, 19);
+  border-radius: 3px;
+  border: none;
+  padding: 20px 22px;
+}
+.welcome__button-go:hover {
+  background-color:#131415;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+}

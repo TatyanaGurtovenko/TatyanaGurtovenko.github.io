@@ -1,69 +1,49 @@
 .features {
-  background-color: black;
-  margin: 40px 0 40px 0;
-  height: 570px;
+  border: 1px solid black;
+  display: inline-flex;
+  width: 276px;
+  height: 286px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 61px;
 }
 
-.features__title {
-  color: #fff;
-  text-align: center;
-  font-size: 49px;
-  font-family: "Open Sans";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 0.776;
-  padding-top: 65px;
-  padding-bottom: 60px;
-  margin: 0;
-}
+
 
 .features__list {
   display: flex;
   justify-content: center;
-  color: #fff;
 }
 
-.features__item {
-  width: 260px;
-}
-
-.features__image {
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
+.features__content {
+  display: inline-flex;
+  width: 230px;
+  height: 200px;
+  flex-direction: column;
   justify-content: center;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  background-color: orange;
+
 }
+
+
 
 .features__subtitle {
   font-size: 12px;
-  text-align: center;
   font-family: "Open Sans";
-  color: rgb(255, 255, 255);
+  color: rgb(34, 31, 31);
   text-transform: uppercase;
-  line-height: 4.767;
-  -moz-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
-  -webkit-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
-  -ms-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
-  letter-spacing: 0.24em;
-  margin-top: 0;
-  line-height: 1;
+  text-align: center;
 }
 
 .features__text {
   font-size: 20px;
   font-family: "Open Sans";
-  color: rgb(255, 255, 255);
+  color: black;
   line-height: 1.667;
   text-align: center;
   -moz-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
   -webkit-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
   -ms-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
+  
 }
 
 .features__sublist-item {
@@ -71,12 +51,13 @@
   padding: 0 0 0 20px;
   font-size: 20px;
   font-family: "Open Sans";
-  color: rgb(255, 255, 255);
+  color: black;
   line-height: 1.667;
   text-align: left;
   -moz-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
   -webkit-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
   -ms-transform: matrix(0.89709304898013, 0, 0, 0.89821428571429, 0, 0);
+  list-style-type: disc;
 }
 
 .features__sublist-item::before {
@@ -90,4 +71,19 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0;
+}
+
+
+
+.banner-content {
+  margin-left: 25px;
+}
+
+.features__title {
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: rgb(34, 31, 31);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }

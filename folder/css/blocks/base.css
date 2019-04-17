@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  width: 1060px;
+  width: 1160px;
   margin: 0 auto;
   height: 100%;
 }
@@ -42,4 +42,22 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.start-page {
+  display: flex;
+}
+
+.right-content {
+  margin-top: 40px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-content {
+  margin-top: 45px;
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
 }

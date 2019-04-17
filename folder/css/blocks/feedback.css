@@ -1,10 +1,11 @@
 .feedback {
   margin-bottom: 60px;
+  margin-top: 65px;
 }
 
 .feedback__content {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 
 }
 
@@ -41,26 +42,33 @@
 }
 
 .input__name {
+  padding: 0 10px;
+  outline: none;
   width: 270px;
   height: 46px;
   border: none;
 }
 
 .input__link {
+  padding: 0 10px;
+  outline: none;
   height: 46px;
   width: 270px;
   border: none;
 }
 
 .input__text {
+  padding: 0 10px;
+  padding-top: 5px;
+  border: none;
+  outline: none;
   height: 90px;
   width: 564px;
-  border-radius: 3px;
-  border: solid 1 px orange;
   resize: none;
   overflow: auto;
   text-align: start;
 }
+
 
 .feedback__submit {
   margin-top: 20px;
@@ -131,4 +139,32 @@
   height: 20px;
   margin-right: 5px;
 
+}
+.input__link:focus {
+  border: 1px solid rgb(248, 149, 19);
+}
+.input__text:focus {
+  border: 1px solid rgb(248, 149, 19);
+  border-radius: 3px;
+}
+.input__name:focus {
+  border: 1px solid rgb(248, 149, 19);
+}
+input[type=radio]:checked + .radio-label {
+  color:rgb(248, 149, 19);
+}
+input[type=radio]:checked + .radio-label:before {
+  background: url(../img/ellipse.png) no-repeat center;
+  border: 1px solid #ec1e79;
+}
+.radio-label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c9c9c9;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  left: -26px;
 }

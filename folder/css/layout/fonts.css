@@ -5,3 +5,15 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: GothamPro;
+  src: url("/fonts/GothamPro.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: GothamPro;
+  src: url("/fonts/GothamPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}

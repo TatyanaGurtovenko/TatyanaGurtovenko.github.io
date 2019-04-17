@@ -2,9 +2,9 @@
 @import url("./layout/fonts.css");
 @import url("./blocks/base.css");
 @import url("./blocks/header.css");
-@import url("./blocks/logo.css");
-@import url("./blocks/nav.css");
 @import url("./blocks/contacts.css");
+@import url("./blocks/logo.css");
+@import url("./blocks/nav__main.css");
 @import url("./blocks/banner.css");
 @import url("./blocks/features.css");
 @import url("./blocks/news.css");

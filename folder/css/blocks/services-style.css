@@ -1,3 +1,23 @@
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 45px;
+
+}
+
+.start-page {
+  display: flex;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+}
+
+
+
 .services__title-services {
   font-size: 49px;
   font-family: "Open Sans";
@@ -47,7 +67,8 @@
 }
 
 .services {
-  margin-left: 110px;
+  margin-left: 23px;
+  margin-bottom: 55px;
 }
 
 .services__blocks {

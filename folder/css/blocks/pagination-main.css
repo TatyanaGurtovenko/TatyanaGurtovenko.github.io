@@ -1,7 +1,7 @@
 .pagination {
   display: flex;
   justify-content: center;
-  padding: 72px 72px;
+  margin-bottom: 55px;
 }
 
 .pagination__controls {
@@ -60,4 +60,8 @@
   color: white;
   width: 25px;
   height: 25px;
+}
+
+.pagination__link:hover {
+  color: rgb(248, 149, 19);
 }
