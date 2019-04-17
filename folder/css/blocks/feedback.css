@@ -11,7 +11,7 @@
 
 .feedback__box {
   width: 699px;
-  height: 426px;
+  height: 430px;
   background-color: #f5f5f5;
   flex-direction: column;
   display: flex;
@@ -24,12 +24,13 @@
 }
 
 .feedback__title {
+  line-height: 1;
   margin-left: 69px;
   font-size: 49px;
   font-family: "Open Sans";
   color: rgb(34, 31, 31);
   font-weight: bold;
-
+  margin-bottom: 30px;
 }
 
 .name__user,
@@ -44,7 +45,7 @@
 .input__name {
   padding: 0 10px;
   outline: none;
-  width: 270px;
+  width: 253px;
   height: 46px;
   border: none;
 }
@@ -52,18 +53,18 @@
 .input__link {
   padding: 0 10px;
   outline: none;
-  height: 46px;
-  width: 270px;
+  height: 45px;
+  width: 252px;
   border: none;
 }
 
 .input__text {
-  padding: 0 10px;
+  padding-left: 10px;
   padding-top: 5px;
   border: none;
   outline: none;
-  height: 90px;
-  width: 564px;
+  height: 85px;
+  width: 558px;
   resize: none;
   overflow: auto;
   text-align: start;
@@ -79,24 +80,25 @@
 }
 
 .name {
-
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
+  width: 273px;
 }
 
 .link {
-  margin-left: 20px;
+  margin-left: 22px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  width: 273px;
 }
 
 .form__reviews {
   display: flex;
-
+  margin-top: 20px;
   justify-content: space-around;
+  width: 278;
 }
 
 .consent__question {
@@ -112,8 +114,10 @@
 .radio__buttons {
   display: inline-flex;
   box-sizing: border-box;
-  margin-top: 10px;
-
+}
+.submit-button {
+  display: flex;
+  justify-content: left;
 }
 
 .feedback__submit-button {
@@ -128,18 +132,16 @@
   border-radius: 3px;
   border: none;
 }
-
-.feedback__question {
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(34, 31, 31);
+.feedback__submit-button:hover {
+  color: black;
+  background-color: rgb(248, 149, 19);
 }
-.radio {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-
+.feedback__question-buttons {
+   display: flex;
+   flex-direction:column;
 }
+
+
 .input__link:focus {
   border: 1px solid rgb(248, 149, 19);
 }
@@ -147,15 +149,37 @@
   border: 1px solid rgb(248, 149, 19);
   border-radius: 3px;
 }
+
 .input__name:focus {
   border: 1px solid rgb(248, 149, 19);
 }
+input[type=radio] {
+  display: none;
+}
+
+.feedback__question {
+  display: inline-flex;
+  margin-bottom: 8px;
+}
+
 input[type=radio]:checked + .radio-label {
   color:rgb(248, 149, 19);
 }
 input[type=radio]:checked + .radio-label:before {
-  background: url(../img/ellipse.png) no-repeat center;
-  border: 1px solid #ec1e79;
+  background: url("../../img/Ellipse\ radio\ button.png") no-repeat center;
+  border: 1px solid rgb(248, 149, 19);
+}
+.radio-label {
+  cursor: pointer;
+  position: relative;
+  margin-right: 11px;
+  margin-left: 28px;
+  font-family: GothamPro;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #221f1f;
 }
 .radio-label::before {
   content: '';
