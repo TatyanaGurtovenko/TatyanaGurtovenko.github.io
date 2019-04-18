@@ -60,14 +60,10 @@
 .popup::after {
   content: '';
   position: absolute;
-  /* Абсолютное позиционирование */
   right: 1px;
   top: -21px;
-  /* Положение треугольника */
   border: 11px solid transparent;
-  /* Прозрачные границы */
   border-bottom: 11px solid white;
-  /* Добавляем треугольник */
 }
 
 .popup__content {
