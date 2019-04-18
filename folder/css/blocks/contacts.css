@@ -12,6 +12,15 @@
   position: relative;
 }
 
+.company-contacts__scheldule:before {
+  content: '';
+  display: block;
+  height: 35px;
+  top: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
 .company-contacts__scheldule-text {
   text-decoration: underline;
   color: rgba(248, 149, 19, 0.702);
