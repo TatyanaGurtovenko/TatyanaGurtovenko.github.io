@@ -1,0 +1,15 @@
+.reviews {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        
+    }
+
+    &__image {
+        flex-basis: 25%;
+    }
+
+}

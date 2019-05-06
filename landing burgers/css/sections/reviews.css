@@ -1,0 +1,16 @@
+.reviews__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  width: 100%; }
+
+.reviews__image {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%; }

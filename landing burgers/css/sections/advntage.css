@@ -1,0 +1,63 @@
+.advantage {
+  height: 100%;
+  width: 100%;
+  background-image: url("/img/advantage_img/advantage_bg.png");
+  background-size: cover;
+  background-position: center center; }
+  .advantage__headline {
+    margin-top: 135px;
+    font-size: 71.713px;
+    font-family: "gagalinregular";
+    color: #2f3234;
+    line-height: 0.889;
+    -moz-transform: matrix(1.00025, 0, 0, 1.00485, 0, 0);
+    -webkit-transform: matrix(1.00025, 0, 0, 1.00485, 0, 0);
+    -ms-transform: matrix(1.00025, 0, 0, 1.00485, 0, 0); }
+  .advantage__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .advantage__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 55px; }
+  .advantage__item {
+    width: 300px;
+    text-align: center;
+    margin-left: 35px; }
+  .advantage__title {
+    font-size: 24px;
+    font-family: "lifehack_medium";
+    color: #2f3234;
+    line-height: 1.167;
+    -moz-transform: matrix(0.99883, 0, 0, 1.00494, 0, 0);
+    -webkit-transform: matrix(0.99883, 0, 0, 1.00494, 0, 0);
+    -ms-transform: matrix(0.99883, 0, 0, 1.00494, 0, 0);
+    margin-bottom: 25px; }
+  .advantage__text {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgba(47, 50, 52, 0.8);
+    line-height: 1.714;
+    -moz-transform: matrix(1, 0, 0, 1.00085, 0, 0);
+    -webkit-transform: matrix(1, 0, 0, 1.00085, 0, 0);
+    -ms-transform: matrix(1, 0, 0, 1.00085, 0, 0); }
+  .advantage__image {
+    margin-bottom: 33px; }

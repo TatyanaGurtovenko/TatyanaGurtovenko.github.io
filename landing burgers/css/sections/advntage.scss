@@ -1,0 +1,65 @@
+.advantage {
+    height: 100%;
+    width: 100%;
+    background-image: url("/img/advantage_img/advantage_bg.png");
+    background-size: cover;
+    background-position: center center;
+
+    &__headline {
+        margin-top: 135px;
+        font-size: 71.713px;
+        font-family: "gagalinregular";
+        color: rgb(47, 50, 52);
+        line-height: 0.889;
+        -moz-transform: matrix(1.00024500727088, 0, 0, 1.00484728680505, 0, 0);
+        -webkit-transform: matrix(1.00024500727088, 0, 0, 1.00484728680505, 0, 0);
+        -ms-transform: matrix(1.00024500727088, 0, 0, 1.00484728680505, 0, 0);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 55px;
+    }
+
+    &__item {
+        width: 300px;
+        text-align: center;
+        margin-left: 35px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-family: "lifehack_medium";
+        color: rgb(47, 50, 52);
+        line-height: 1.167;
+        -moz-transform: matrix(0.99883262359814, 0, 0, 1.00494012923551, 0, 0);
+        -webkit-transform: matrix(0.99883262359814, 0, 0, 1.00494012923551, 0, 0);
+        -ms-transform: matrix(0.99883262359814, 0, 0, 1.00494012923551, 0, 0);
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-family: "Ubuntu";
+        color: rgba(47, 50, 52, 0.8);
+        line-height: 1.714;
+        -moz-transform: matrix(1, 0, 0, 1.00084509893015, 0, 0);
+        -webkit-transform: matrix(1, 0, 0, 1.00084509893015, 0, 0);
+        -ms-transform: matrix(1, 0, 0, 1.00084509893015, 0, 0);
+
+    }
+
+    &__image {
+        margin-bottom: 33px;
+    }
+
+}
