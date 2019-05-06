@@ -5,11 +5,58 @@
         flex-direction: column;
         margin: 0;
         width: 100%;
-        
+
     }
 
     &__image {
+        width: 100%;
+        filter: grayscale(100%);
+        
+    }
+
+    .image__block {
+        display: flex;
+        justify-content: center;
         flex-basis: 25%;
+        position: relative;
+
+    }
+
+    &__text {
+        display: block;
+        position: absolute;
+        width: 225px;
+    }
+
+    &__text-title {
+        font-size: 14px;
+        font-family: "gagalinregular";
+        color: rgb(255, 255, 255);
+        line-height: 2.008;
+        -moz-transform: matrix(0.99883262359814, 0, 0, 1.00409157252179, 0, 0);
+        -webkit-transform: matrix(0.99883262359814, 0, 0, 1.00409157252179, 0, 0);
+        -ms-transform: matrix(0.99883262359814, 0, 0, 1.00409157252179, 0, 0);
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    &__text-par {
+        font-size: 14px;
+        font-family: "Ubuntu";
+        color: rgb(255, 255, 255);
+        line-height: 1.714;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        font-size: 13px;
+        font-family: "Ubuntu";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 2.308;
+        background-color: #2f3234;
+        padding: 12px 15px;
+
     }
 
 }
