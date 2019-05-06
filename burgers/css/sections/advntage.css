@@ -1,7 +1,7 @@
 .advantage {
   height: 100%;
   width: 100%;
-  background-image: url("/img/advantage_img/advantage_bg.png");
+  background-image: url("/burgers/img/advantage_img/advantage_bg.png");
   background-size: cover;
   background-position: center center; }
   .advantage__headline {
