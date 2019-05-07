@@ -49,6 +49,7 @@
     background-position: center center;
 
     &__content {
+        flex: 1;
         display: flex;
         align-items: center;
         height: calc(100% - 100px);
