@@ -6,7 +6,7 @@
     background-position: center center;
 
     &__headline {
-        
+
         font-size: 71.713px;
         font-family: "gagalinregular";
         color: rgb(47, 50, 52);
@@ -59,7 +59,11 @@
     }
 
     &__image {
+        width: 97px;
+        height: 89px;
         margin-bottom: 33px;
+        margin: 0 auto 33px auto;
+        text-align: center;
     }
 
 }

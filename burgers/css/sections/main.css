@@ -50,13 +50,13 @@ h6 {
 
 @font-face {
   font-family: 'gagalinregular';
-  src: url("../fonts/9903-webfont.woff2") format("woff2"), url("../fonts/9903-webfont.woff") format("woff");
+  src: url("../../fonts/9903-webfont.woff2") format("woff2"), url("../../fonts/9903-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'lifehack_medium';
-  src: url("../fonts/deartype_-_lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/deartype_-_lifehack_medium-webfont.woff") format("woff");
+  src: url("../../fonts/deartype_-_lifehack_medium-webfont.woff2") format("woff2"), url("../../fonts/deartype_-_lifehack_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -269,7 +269,11 @@ h6 {
     -webkit-transform: matrix(1, 0, 0, 1.00085, 0, 0);
     -ms-transform: matrix(1, 0, 0, 1.00085, 0, 0); }
   .advantage__image {
-    margin-bottom: 33px; }
+    width: 97px;
+    height: 89px;
+    margin-bottom: 33px;
+    margin: 0 auto 33px auto;
+    text-align: center; }
 
 .reviews {
   background: no-repeat;
