@@ -1,0 +1,109 @@
+.team {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../img/team/bg_team.png");
+    background-size: cover;
+    background-position: center center;
+
+    &__title {
+        margin-bottom: 55px;
+        font-size: 71.713px;
+        font-family: "gagalinregular";
+        color: $yellow;
+        line-height: 0.889;
+        -moz-transform: matrix(1.00024496731662, 0, 0, 1.00458467542043, 0, 0);
+        -webkit-transform: matrix(1.00024496731662, 0, 0, 1.00458467542043, 0, 0);
+        -ms-transform: matrix(1.00024496731662, 0, 0, 1.00458467542043, 0, 0);
+    }
+
+    &__block {
+        display: flex;
+        
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        background-color: rgba(52, 55, 57, 0.9);
+        flex-direction: column;
+    }
+
+    &__block-content {
+        padding-top: 112px;
+        margin-left: 95px;
+    }
+
+}
+
+.accordeon {
+    
+    display: flex;
+    flex-direction: column;
+    &__item {
+        
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        &.active {
+            .accordeon__item-desc {
+                display: flex;
+                align-items: center;
+                margin-bottom: 45px
+            }
+        }
+    }
+
+    &__item-link {
+        font-size: 14px;
+        font-family: "gagalinregular";
+        color: rgb(255, 255, 255);
+        line-height: 1;
+        -moz-transform: matrix(0.9988325837003, 0, 0, 1.00467749358702, 0, 0);
+        -webkit-transform: matrix(0.9988325837003, 0, 0, 1.00467749358702, 0, 0);
+        -ms-transform: matrix(0.9988325837003, 0, 0, 1.00467749358702, 0, 0);
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 18px;
+    }
+
+    &__item-desc {
+        display: none;
+    }
+
+    &__item-link:before {
+        content: "";
+        border: 5px solid transparent;
+        border-top: 5px solid $yellow;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+    }
+
+    &__item-title {
+        margin-bottom: 25px;
+        font-size: 14px;
+        font-family: "Ubuntu";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        -moz-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
+        -webkit-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
+        -ms-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
+    }
+
+    &__item-avatar {
+        margin-right: 30px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+
+    &__item-about {
+        width: 210px;
+        font-size: 14px;
+        font-family: "Ubuntu";
+        color: rgb(255, 255, 255);
+        -moz-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
+        -webkit-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
+        -ms-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
+    }
+
+}

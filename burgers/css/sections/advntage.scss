@@ -1,3 +1,8 @@
+.advantage__image-content {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .advantage {
     height: 100%;
     width: 100%;
@@ -9,7 +14,7 @@
 
         font-size: 71.713px;
         font-family: "gagalinregular";
-        color: rgb(47, 50, 52);
+        color: $gray;
         line-height: 0.889;
         -moz-transform: matrix(1.00024500727088, 0, 0, 1.00484728680505, 0, 0);
         -webkit-transform: matrix(1.00024500727088, 0, 0, 1.00484728680505, 0, 0);
@@ -39,7 +44,7 @@
     &__title {
         font-size: 24px;
         font-family: "lifehack_medium";
-        color: rgb(47, 50, 52);
+        color: $gray;
         line-height: 1.167;
         -moz-transform: matrix(0.99883262359814, 0, 0, 1.00494012923551, 0, 0);
         -webkit-transform: matrix(0.99883262359814, 0, 0, 1.00494012923551, 0, 0);

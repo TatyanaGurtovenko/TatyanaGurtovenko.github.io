@@ -1,6 +1,16 @@
+//colors
+$yellow: #f9b43b;
+$orange: #e45028;
+$gray: #2f3234;
+
+
 @import "../layout/normalize.css";
 @import "../../css/layout/base.scss";
 @import "../sections/fonts.scss";
 @import "./intro.scss";
 @import "./advntage.scss";
 @import "./reviews.scss";
+@import "./team.scss";
+@import "./menu.scss";
+@import "./map.scss";
+@import "./delivery.scss";
