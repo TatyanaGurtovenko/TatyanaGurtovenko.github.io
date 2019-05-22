@@ -1,12 +1,12 @@
 .socials__list {
   display: flex;
-  margin-top: 10px;
+  margin-top: rem(10px);
 }
 
 .socials__item {
-  margin: 0 10px 0 0;
-  width: 25px;
-  height: 25px;
+  margin: 0 rem(10px) 0 0;
+  width: rem(25px);
+  height: rem(25px);
   border-radius: 50%;
 }
 .socials__item:hover {
@@ -23,14 +23,14 @@
 }
 
 .socials__text {
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: "Open Sans";
   color: black;
   font-weight: bold;
 }
 .socials__main {
-  margin-top: 50px;
+  margin-top: rem(50px);
 }
 .socials__reviews, .socials__services {
-  margin-top: 30px;
+  margin-top: rem(30px);
 }

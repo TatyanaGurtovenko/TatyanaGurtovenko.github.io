@@ -3,9 +3,16 @@ $yellow: #f9b43b;
 $orange: #e45028;
 $gray: #2f3234;
 
+//breackpoints 
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
 
 @import "../layout/normalize.css";
 @import "../../css/layout/base.scss";
+@import "../../css/layout/media.scss";
 @import "../sections/fonts.scss";
 @import "./intro.scss";
 @import "./advntage.scss";

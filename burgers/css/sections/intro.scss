@@ -7,18 +7,18 @@
     z-index: 10;
     position: fixed;
     top: 20%;
-    right: 60px;
+    right: rem(60px);
 
     &__item {
-        margin: 0 0 20px 0;
+        margin: 0 0 rem(20px) 0;
     }
 
     &__link {
         position: relative;
         display: block;
         border-radius: 50%;
-        width: 16px;
-        height: 16px;
+        width: rem(16px);
+        height: rem(16px);
 
         &:before {
             display: block;
@@ -29,8 +29,8 @@
             transform: translate(-50%, -50%);
             background-color: #fff;
             border-radius: 50%;
-            width: 8px;
-            height: 8px;
+            width: rem(8px);
+            height: rem(8px);
         }
     }
 }
@@ -38,7 +38,7 @@
 .aside__item {
     &.active {
         .aside__link {
-            border: 1px solid #fff;
+            border: rem(1px) solid #fff;
         }
     }
 }
@@ -51,42 +51,94 @@
     &__content {
         flex: 1;
         display: flex;
+        justify-content: center;
         align-items: center;
-        height: calc(100% - 100px);
-        margin: -100px 0 0 0;
+        height: calc(100% - rem(100px));
+        margin: -rem(100px) 0 0 0;
+
+        @include tablets {
+            flex-direction: column;
+
+
+        }
     }
 
     &__text {
-        margin-top: 100px;
+        margin-top: rem(100px);
+
+        @include tablets {
+            margin: 0;
+        }
+    }
+
+
+}
+
+.intro-left,
+.intro-right {
+    width: 50%;
+    float: left;
+
+    @include tablets {
+        width: 100%;
+        float: none;
+    }
+}
+
+.intro-right {
+    @include tablets {
+        text-align: center;
+        padding: rem(40px) 20% 0;
+
+    }
+}
+
+.intro-left {
+    @include tablets {
+        text-align: center;
+
     }
 }
 
 .header {
-    height: 100px;
+    height: rem(100px);
     display: flex;
     align-items: center;
-    
-    &__content {
+    justify-content: space-between;
+
+    &__nav {
         display: flex;
         align-items: center;
 
-
         .button {
-            margin-left: 10px;
+            margin-left: rem(10px);
         }
     }
 
     .logo {
-        margin-right: 70px;
+        margin-right: rem(70px);
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
     }
 
 
 }
 
 .logo__img {
-    width: 90px;
-    height: 90px;
-    
+    width: rem(90px);
+    height: rem(90px);
+}
+
+.burger__img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    @include tablets {
+        max-width: 80%;
+    }
 }
 
 .nav {
@@ -97,11 +149,11 @@
 
     &__item {
         position: relative;
-        font-size: 13px;
+        font-size: rem(13px);
         font-family: "Ubuntu";
         text-transform: uppercase;
         line-height: 2.308;
-        margin-left: 30px;
+        margin-left: rem(30px);
 
         &:first-child {
             margin: 0;
@@ -111,13 +163,13 @@
             display: block;
             position: absolute;
             content: "";
-            height: 4px;
-            width: 4px;
+            height: rem(4px);
+            width: rem(4px);
             background-color: white;
             border-radius: 50%;
             top: 50%;
             transform: translateY(-50%);
-            left: -19px;
+            left: rem(-19px);
         }
 
         &:first-child {
@@ -125,28 +177,51 @@
                 display: none;
             }
         }
+
+        @include tablets {
+            display: none;
+        }
     }
 
     &__link {
         color: rgb(255, 255, 255);
     }
+
+
+}
+
+
+.button__nav {
+    vertical-align: middle;
+    position: relative;
+    height: rem(22px);
+    align-items: center;
+    margin-left: rem(30px);
+    display: none;
+
+    @include tablets {
+        display: flex;
+    }
+}
+
+.button__nav-element {
+    display: block;
+    margin-bottom: rem(5px);
+    background: #fff;
+    width: rem(24px);
+    height: rem(5px);
+    border-radius: rem(3px);
+
 }
 
 
 
-
-.headline {
-    font-size: 72px;
-    font-family: "gagalinregular";
+.intro__title {
     color: $yellow;
-    line-height: 1.181;
-    -moz-transform: matrix(1.00034537162918, 0, 0, 0.99971888136576, 0, 0);
-    -webkit-transform: matrix(1.00034537162918, 0, 0, 0.99971888136576, 0, 0);
-    -ms-transform: matrix(1.00034537162918, 0, 0, 0.99971888136576, 0, 0);
 }
 
 .tagline {
-    font-size: 60px;
+    font-size: rem(60px);
     font-family: "lifehack_medium";
     color: rgb(255, 255, 255);
     line-height: 1.181;
@@ -154,11 +229,17 @@
     -moz-transform: matrix(1.00034537162918, 0, 0, 0.99971888136576, 0, 0);
     -webkit-transform: matrix(1.00034537162918, 0, 0, 0.99971888136576, 0, 0);
     -ms-transform: matrix(1.00034537162918, 0, 0, 0.99971888136576, 0, 0);
+    @include tablets {
+        font-size: rem(50px);
+    }
 }
 
 
+
+
+
 .button {
-    font-size: 13px;
+    font-size: rem(13px);
     font-family: "Ubuntu";
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -166,8 +247,8 @@
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
-    padding: 10px 15px;
+    border-radius: rem(4px);
+    padding: rem(10px) rem(15px);
     background-color: $orange;
     display: flex;
     cursor: pointer;

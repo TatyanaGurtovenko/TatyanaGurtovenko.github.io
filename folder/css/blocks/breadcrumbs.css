@@ -1,5 +1,5 @@
 .breadcrumbs {
-  margin-left: 23px;
+  margin-left: rem(23px);
 }
 
 
@@ -14,7 +14,7 @@
   content: "/";
   display: inline-flex;
   vertical-align: middle;
-  margin-left: 4px;
+  margin-left: rem(4px);
 
 }
 
@@ -25,7 +25,7 @@
 .breadcrumbs__comments-main {
   display: inline-flex;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: "OpenSansLight";
   color: rgba(248, 149, 19, 0.8);
   font-style: italic;
@@ -34,7 +34,7 @@
 .breadcrumbs__comments-rewiews {
   display: inline-flex;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: "OpenSansLight";
   font-style: italic;
   color: black;
@@ -43,7 +43,7 @@
 .breadcrumbs__services-main {
   display: inline-flex;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: "OpenSansLight";
   color: rgba(248, 149, 19, 0.8);
   font-style: italic;
@@ -52,7 +52,7 @@
 .breadcrumbs__services-rewiews {
   display: inline-flex;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: "OpenSansLight";
   font-style: italic;
   color: black;

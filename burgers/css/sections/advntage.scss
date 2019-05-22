@@ -4,21 +4,15 @@
 }
 
 .advantage {
-    height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
     background-image: url("/burgers/img/advantage_img/advantage_bg.png");
     background-size: cover;
     background-position: center center;
 
-    &__headline {
-
-        font-size: 71.713px;
-        font-family: "gagalinregular";
+    &__title {
         color: $gray;
-        line-height: 0.889;
-        -moz-transform: matrix(1.00024500727088, 0, 0, 1.00484728680505, 0, 0);
-        -webkit-transform: matrix(1.00024500727088, 0, 0, 1.00484728680505, 0, 0);
-        -ms-transform: matrix(1.00024500727088, 0, 0, 1.00484728680505, 0, 0);
     }
 
     &__content {
@@ -30,30 +24,46 @@
 
     &__list {
         display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        margin-top: 55px;
+        margin-top: rem(55px);
+
+        @include phones {
+            flex-direction: column;
+            margin-top: rem(30px);
+        }
     }
 
     &__item {
-        width: 300px;
+        margin-bottom: rem(50px);
+        padding: 0 rem(15px);
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        margin-left: 35px;
+
+        @include phones {
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: rem(25px);
+            text-align: left;
+        }
     }
 
-    &__title {
-        font-size: 24px;
+    &__item:first-child {
+        margin-left: 0;
+    }
+
+    &__tagline {
+        font-size: rem(24px);
         font-family: "lifehack_medium";
         color: $gray;
         line-height: 1.167;
         -moz-transform: matrix(0.99883262359814, 0, 0, 1.00494012923551, 0, 0);
         -webkit-transform: matrix(0.99883262359814, 0, 0, 1.00494012923551, 0, 0);
         -ms-transform: matrix(0.99883262359814, 0, 0, 1.00494012923551, 0, 0);
-        margin-bottom: 25px;
+        margin-bottom: rem(25px);
     }
 
     &__text {
-        font-size: 14px;
+        font-size: rem(14px);
         font-family: "Ubuntu";
         color: rgba(47, 50, 52, 0.8);
         line-height: 1.714;
@@ -64,11 +74,23 @@
     }
 
     &__image {
-        width: 97px;
-        height: 89px;
-        margin-bottom: 33px;
-        margin: 0 auto 33px auto;
-        text-align: center;
+        width: rem(97px);
+        height: rem(89px);
+        margin-bottom: rem(33px);
+        margin: 0 auto rem(33px) auto;
+
+        @include phones {
+            margin-right: rem(20px);
+            width: 30%;
+        }
+
     }
 
+    &__desc {
+        @include phones {
+            text-align: left;
+            display: block;
+            width: 65%;
+        }
+    }
 }

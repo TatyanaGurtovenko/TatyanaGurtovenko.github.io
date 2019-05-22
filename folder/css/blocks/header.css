@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 16px; 
+  padding-bottom: rem(16px); 
 }
 
 .logo {
@@ -21,7 +21,7 @@
 }
 
 .nav__item {
-  margin: 0 10px 0 0;
+  margin: 0 rem(10px) 0 0;
 }
 
 .nav__link:hover .nav__title {

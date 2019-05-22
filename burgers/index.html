@@ -67,14 +67,14 @@
       </ul>
     </aside>
     <section class="section intro">
-      <div class="container header-container">
+      <div class="container">
         <div class="header">
           <a href="#" class="logo">
             <svg class="logo__img">
               <use xlink:href="../burgers/img/sprite.svg#logo"></use>
             </svg>
           </a>
-          <div class="header__content">
+          <div class="header__nav">
             <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__item"><a href="" class="nav__link">О нас</a></li>
@@ -86,13 +86,24 @@
                 <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
               </ul>
             </nav>
+          </div>
+          <div class="header__links">
             <a href="" class="button">Заказать</a>
+            <a href="" class="button__nav">
+              <div class="button__nav-aside">
+                <span class="button__nav-element"></span>
+                <span class="button__nav-element"></span>
+                <span class="button__nav-element"></span>
+              </div>
+            </a>
           </div>
         </div>
         <div class="intro__content">
-          <img src="/burgers/img/main_section_img/Burger.png" alt="Бургер" class="burger__img">
-          <div class="intro__text">
-            <div class="headline">
+          <div class="intro-left">
+            <img src="/burgers/img/main_section_img/Burger.png" alt="Бургер" class="burger__img">
+          </div>
+          <div class="intro__text intro-right">
+            <div class="section__title intro__title">
               Мы делаем
             </div>
             <div class="tagline">
@@ -101,11 +112,12 @@
           </div>
         </div>
       </div>
+
     </section>
     <section class="section advantage">
       <div class="container">
         <div class="advantage__content">
-          <h1 class="advantage__headline">Мы лучшие</h1>
+          <h1 class="section__title advantage__title">Мы лучшие</h1>
           <ul class="advantage__list">
             <li class="advantage__item">
               <div class="advantage__image">
@@ -113,9 +125,11 @@
                   <use xlink:href="../burgers/img/sprite.svg#meat"></use>
                 </svg>
               </div>
-              <h3 class="advantage__title">100% свежее мясо</h3>
-              <p class="advantage__text">Драма представляет собой деструктивный цикл.
-                Анапест представляет собой анапест. Ямб неравномерен.</p>
+              <div class="advantage__desc">
+                <h3 class="advantage__tagline">100% свежее мясо</h3>
+                <p class="advantage__text">Драма представляет собой деструктивный цикл.
+                  Анапест представляет собой анапест. Ямб неравномерен.</p>
+              </div>
             </li>
             <li class="advantage__item">
               <div class="advantage__image">
@@ -123,11 +137,13 @@
                   <use xlink:href="../burgers/img/sprite.svg#hand"></use>
                 </svg>
               </div>
-              <h3 class="advantage__title">Ручная сборка</h3>
-              <p class="advantage__text">Драма представляет собой деструктивный цикл. Анапест представляет собой
-                анапест.
-                Первое полустишие притягивает сюжетный реформаторский пафос.
-              </p>
+              <div class="advantage__desc">
+                <h3 class="advantage__tagline">Ручная сборка</h3>
+                <p class="advantage__text">Драма представляет собой деструктивный цикл. Анапест представляет собой
+                  анапест.
+                  Первое полустишие притягивает сюжетный реформаторский пафос.
+                </p>
+              </div>
             </li>
             <li class="advantage__item">
               <div class="advantage__image">
@@ -135,47 +151,21 @@
                   <use xlink:href="../burgers/img/sprite.svg#natural"></use>
                 </svg>
               </div>
-              <h3 class="advantage__title">Натуральные ингридиенты</h3>
-              <p class="advantage__text">Драма представляет собой деструктивный цикл. Анапест представляет собой
-                анапест.</p>
+              <div class="advantage__desc">
+                <h3 class="advantage__tagline">Натуральные ингридиенты</h3>
+                <p class="advantage__text">Драма представляет собой деструктивный цикл. Анапест представляет собой
+                  анапест.</p>
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="section reviews">
-      <ul class="reviews__list">
-        <li class="reviews__item" style="background-image:url(/burgers/img/reviews/photo_1.png)">
-        </li>
-        <li class="reviews__item" style="background-image:url(/burgers/img/reviews/photo_2.png)">
-        </li>
-        <li class="reviews__item" style="background-image:url(/burgers/img/reviews/photo_3.png)">
-          <div class="reviews__text">
-            <h3 class="reviews__text-title">Константин Спилберг</h3>
-            <p class="reviews__text-par">Мысли все о них и о них, о них и о них.
-              Нельзя устоять, невозможно забыть... Никогда не думал,
-              что булочки могут быть такими мягкими, котлетка такой
-              сочной, а сыр таким расплавленным.
-            </p>
-            <a href="#" class="reviews__button">Подробнее</a>
-          </div>
-        </li>
-        <li class="reviews__item" style="background-image:url(/burgers/img/reviews/photo_4.png)">
-        </li>
-        <li class="reviews__item" style="background-image:url(/burgers/img/reviews/photo_5.png)">
-        </li>
-        <li class="reviews__item" style="background-image:url(/burgers/img/reviews/photo_6.png)">
-        </li>
-        <li class="reviews__item" style="background-image:url(/burgers/img/reviews/photo_7.png)">
-        </li>
-        <li class="reviews__item" style="background-image:url(/burgers/img/reviews/photo_8.png)">
-        </li>
-      </ul>
-    </section>
+
     <section class="section team">
       <div class="team__block">
         <div class="team__block-content">
-          <h1 class="team__title">
+          <h1 class="section__title team__title">
             Команда
           </h1>
           <ul class="accordeon">
@@ -233,7 +223,7 @@
     </section>
     <section class="section menu">
       <div class="container">
-        <h1 class="menu__title">Меню</h1>
+        <h1 class="section__title menu__title">Меню</h1>
       </div>
       <div class="menu__content">
         <ul class="menu__list">
@@ -276,60 +266,199 @@
         </ul>
       </div>
     </section>
+    <section class="section reviews">
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <div class="review">
+            <div class="reviews__photo" style="background-image:url(/burgers/img/reviews/photo_1.png)"></div>
+            <div class="reviews__text">
+              <div class="reviews__text-content">
+                <h3 class="reviews__text-title">Константин Спилберг</h3>
+                <p class="reviews__text-par">Мысли все о них и о них, о них и о них.
+                  Нельзя устоять, невозможно забыть... Никогда не думал,
+                  что булочки могут быть такими мягкими, котлетка такой
+                  сочной, а сыр таким расплавленным.
+                </p>
+                <a href="#" class="reviews__button">Подробнее</a>
+                <a href="#" class="reviews__button-phone">Читать отзыв</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__item">
+          <div class="review">
+            <div class="reviews__photo" style="background-image:url(/burgers/img/reviews/photo_3.png)"></div>
+            <div class="reviews__text">
+              <div class="reviews__text-content">
+                <h3 class="reviews__text-title">Константин Спилберг</h3>
+                <p class="reviews__text-par">Мысли все о них и о них, о них и о них.
+                  Нельзя устоять, невозможно забыть... Никогда не думал,
+                  что булочки могут быть такими мягкими, котлетка такой
+                  сочной, а сыр таким расплавленным.
+                </p>
+                <a href="#" class="reviews__button">Подробнее</a>
+                <a href="#" class="reviews__button-phone">Читать отзыв</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__item">
+          <div class="review">
+            <div class="reviews__photo" style="background-image:url(/burgers/img/reviews/photo_5.png)"></div>
+            <div class="reviews__text">
+              <div class="reviews__text-content">
+                <h3 class="reviews__text-title">Константин Спилберг</h3>
+                <p class="reviews__text-par">Мысли все о них и о них, о них и о них.
+                  Нельзя устоять, невозможно забыть... Никогда не думал,
+                  что булочки могут быть такими мягкими, котлетка такой
+                  сочной, а сыр таким расплавленным.
+                </p>
+                <a href="#" class="reviews__button">Подробнее</a>
+                <a href="#" class="reviews__button-phone">Читать отзыв</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__item">
+          <div class="review">
+            <div class="reviews__photo" style="background-image:url(/burgers/img/reviews/photo_7.png)"></div>
+            <div class="reviews__text">
+              <div class="reviews__text-content">
+                <h3 class="reviews__text-title">Константин Спилберг</h3>
+                <p class="reviews__text-par">Мысли все о них и о них, о них и о них.
+                  Нельзя устоять, невозможно забыть... Никогда не думал,
+                  что булочки могут быть такими мягкими, котлетка такой
+                  сочной, а сыр таким расплавленным.
+                </p>
+                <a href="#" class="reviews__button">Подробнее</a>
+                <a href="#" class="reviews__button-phone">Читать отзыв</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__item">
+          <div class="review">
+            <div class="reviews__photo" style="background-image:url(/burgers/img/reviews/photo_2.png)"></div>
+            <div class="reviews__text">
+              <div class="reviews__text-content">
+                <h3 class="reviews__text-title">Константин Спилберг</h3>
+                <p class="reviews__text-par">Мысли все о них и о них, о них и о них.
+                  Нельзя устоять, невозможно забыть... Никогда не думал,
+                  что булочки могут быть такими мягкими, котлетка такой
+                  сочной, а сыр таким расплавленным.
+                </p>
+                <a href="#" class="reviews__button">Подробнее</a>
+                <a href="#" class="reviews__button-phone">Читать отзыв</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__item">
+          <div class="review">
+            <div class="reviews__photo" style="background-image:url(/burgers/img/reviews/photo_4.png)"></div>
+            <div class="reviews__text">
+              <div class="reviews__text-content">
+                <h3 class="reviews__text-title">Константин Спилберг</h3>
+                <p class="reviews__text-par">Мысли все о них и о них, о них и о них.
+                  Нельзя устоять, невозможно забыть... Никогда не думал,
+                  что булочки могут быть такими мягкими, котлетка такой
+                  сочной, а сыр таким расплавленным.
+                </p>
+                <a href="#" class="reviews__button">Подробнее</a>
+                <a href="#" class="reviews__button-phone">Читать отзыв</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__item">
+          <div class="review">
+            <div class="reviews__photo" style="background-image:url(/burgers/img/reviews/photo_6.png)"></div>
+            <div class="reviews__text">
+              <div class="reviews__text-content">
+                <h3 class="reviews__text-title">Константин Спилберг</h3>
+                <p class="reviews__text-par">Мысли все о них и о них, о них и о них.
+                  Нельзя устоять, невозможно забыть... Никогда не думал,
+                  что булочки могут быть такими мягкими, котлетка такой
+                  сочной, а сыр таким расплавленным.
+                </p>
+                <a href="#" class="reviews__button">Подробнее</a>
+                <a href="#" class="reviews__button-phone">Читать отзыв</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__item">
+          <div class="review">
+            <div class="reviews__photo" style="background-image:url(/burgers/img/reviews/photo_8.png)"></div>
+            <div class="reviews__text">
+              <div class="reviews__text-content">
+                <h3 class="reviews__text-title">Константин Спилберг</h3>
+                <p class="reviews__text-par">Мысли все о них и о них, о них и о них.
+                  Нельзя устоять, невозможно забыть... Никогда не думал,
+                  что булочки могут быть такими мягкими, котлетка такой
+                  сочной, а сыр таким расплавленным.
+                </p>
+                <a href="#" class="reviews__button">Подробнее</a>
+                <a href="#" class="reviews__button-phone">Читать отзыв</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
     <section class="section delivery">
       <div class="container container__delivery">
-        <h1 class="delivery__title">Закажи доставку</h1>
+        <h1 class="section__title delivery__title">Закажи доставку</h1>
         <form action="" class="delivery__form">
-          <div class="delivery__form-about">
+          <div class="delivery__form-part delivery__form-part_left">
             <div class="delivery__form-person">
-              <label for="name" class="delivery__form-name">
+              <label for="name" class="delivery__form-block">
                 <p class="delivery__input-title">Имя</p>
-                <input type="text" class="delivery__name-input">
+                <input type="text" class="delivery__form-input">
               </label>
-              <label for="phone" class="delivery__form-phone">
+              <label for="phone" class="delivery__form-block">
                 <p class="delivery__input-title">Телефон</p>
-                <input type="text" class="delivery__phone-input">
+                <input type="text" class="delivery__form-input">
               </label>
             </div>
             <div class="delivery__form-adress">
-              <div class="delivery__adress-street">
-                <label for="phone" class="delivery__form-street">
-                  <p class="delivery__input-title">Улица</p>
-                  <input type="text" class="delivery__street-input">
-                </label>
-              </div>
-              <ul class="delivery__adress-list">
-                <li class="delivery__adress-item">
-                  <label for="house" class="delivery__form-item">
-                    <p class="delivery__input-title">Дом</p>
-                    <input type="text" class="delivery__item-input">
-                  </label>
-                </li>
-                <li class="delivery__adress-item">
-                  <label for="housing" class="delivery__form-item">
-                    <p class="delivery__input-title">Корпус</p>
-                    <input type="text" class="delivery__item-input">
-                  </label>
-                </li>
-                <li class="delivery__adress-item">
-                  <label for="apartment" class="delivery__form-item">
-                    <p class="delivery__input-title">Квартира</p>
-                    <input type="text" class="delivery__item-input">
-                  </label>
-                </li>
-                <li class="delivery__adress-item">
-                  <label for="floor" class="delivery__form-item">
-                    <p class="delivery__input-title">Этаж</p>
-                    <input type="text" class="delivery__item-input">
-                  </label>
-                </li>
-              </ul>
+              <label for="phone" class="delivery__form-block">
+                <p class="delivery__input-title">Улица</p>
+                <input type="text" class="delivery__form-input">
+              </label>
             </div>
+            <ul class="delivery__adress-list">
+              <li class="delivery__adress-item">
+                <label for="house" class="delivery__form-block">
+                  <p class="delivery__input-title">Дом</p>
+                  <input type="text" class="delivery__form-input delivery__form-input_adress">
+                </label>
+              </li>
+              <li class="delivery__adress-item">
+                <label for="housing" class="delivery__form-block">
+                  <p class="delivery__input-title">Корпус</p>
+                  <input type="text" class="delivery__form-input delivery__form-input_adress">
+                </label>
+              </li>
+              <li class="delivery__adress-item">
+                <label for="apartment" class="delivery__form-block">
+                  <p class="delivery__input-title">Квартира</p>
+                  <input type="text" class="delivery__form-input delivery__form-input_adress">
+                </label>
+              </li>
+              <li class="delivery__adress-item">
+                <label for="floor" class="delivery__form-block">
+                  <p class="delivery__input-title">Этаж</p>
+                  <input type="text" class="delivery__form-input delivery__form-input_adress">
+                </label>
+              </li>
+            </ul>
+
           </div>
-          <div class="delivery__form-extra">
-            <label for="comment" class="delivery__form-comment">
+          <div class="delivery__form-part">
+            <label for="comment" class="delivery__form-block">
               <p class="delivery__input-title">Комментарий</p>
-              <input type="text" class="delivery__comment-input">
+              <textarea type="text" class="delivery__form-input delivery__form-textarea"></textarea>
             </label>
             <div class="delivery__extra-radio">
               <input type="radio" class="delivery__radio" name="radio" id="money">
@@ -345,6 +474,7 @@
               <button class="button delivery__button">Заказать</button>
               <div class="button__clear">Очистить</div>
             </div>
+          </div>
         </form>
       </div>
       </form>

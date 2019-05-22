@@ -1,6 +1,6 @@
 .banner {
-  height: 500px;
-  widows: 70px;
+  height: rem(500px);
+  widows: rem(70px);
 }
 
 .banner-conxtent {

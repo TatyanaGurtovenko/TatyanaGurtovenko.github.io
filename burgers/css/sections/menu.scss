@@ -8,15 +8,9 @@
 
     &__title {
         position: absolute;
-        top: 110px;
-        font-size: 71.713px;
-        font-family: "gagalinregular";
+        top: rem(110px);
         color: rgb(255, 255, 255);
         line-height: 1;
-        -moz-transform: matrix(1.00024500727088, 0, 0, 1.00399880848613, 0, 0);
-        -webkit-transform: matrix(1.00024500727088, 0, 0, 1.00399880848613, 0, 0);
-        -ms-transform: matrix(1.00024500727088, 0, 0, 1.00399880848613, 0, 0);
-
     }
 
     &__content {
@@ -47,18 +41,18 @@
         height: 100%;
         background-size: cover;
         background-position: center center;
-        width: 80px;
+        width: rem(80px);
         position: relative;
 
         & p {
 
-            font-size: 40px;
+            font-size: rem(40px);
             font-family: "gagalinregular";
             color: rgb(255, 255, 255);
             line-height: 1;
             position: absolute;
             top: 50%;
-            left: -95px;
+            left: rem(-95px);
             transform: rotate(-90deg);
             white-space: nowrap;
         }
@@ -66,10 +60,16 @@
 
     &__item-block {
         display: none;
-        width: 350px;
+        width: rem(350px);
         background-color: rgba(0, 0, 0, 0.5);
         color: #fff;
-        padding: 60px, 30px, 60px, 30px;
+        padding: rem(60px), rem(30px), rem(60px), rem(30px);
 
+    }
+
+    &__text {
+        margin-top: rem(55px);
+        margin-left: rem(35px);
+        margin-right: rem(35px);
     }
 }

@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center center; }
   .advantage__headline {
-    font-size: 71.713px;
+    font-size:rem(71.713px);
     font-family: "gagalinregular";
     color: #2f3234;
     line-height: 0.889;
@@ -36,22 +36,22 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-top: 55px; }
+    margin-top: rem(55px); }
   .advantage__item {
-    width: 300px;
+    width: rem(300px);
     text-align: center;
-    margin-left: 35px; }
+    margin-left: rem(35px); }
   .advantage__title {
-    font-size: 24px;
+    font-size: rem(24px);
     font-family: "lifehack_medium";
     color: #2f3234;
     line-height: 1.167;
     -moz-transform: matrix(0.99883, 0, 0, 1.00494, 0, 0);
     -webkit-transform: matrix(0.99883, 0, 0, 1.00494, 0, 0);
     -ms-transform: matrix(0.99883, 0, 0, 1.00494, 0, 0);
-    margin-bottom: 25px; }
+    margin-bottom: rem(25px); }
   .advantage__text {
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: "Ubuntu";
     color: rgba(47, 50, 52, 0.8);
     line-height: 1.714;
@@ -59,4 +59,4 @@
     -webkit-transform: matrix(1, 0, 0, 1.00085, 0, 0);
     -ms-transform: matrix(1, 0, 0, 1.00085, 0, 0); }
   .advantage__image {
-    margin-bottom: 33px; }
+    margin-bottom: rem(33px); }
