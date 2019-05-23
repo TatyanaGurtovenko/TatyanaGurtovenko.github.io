@@ -2,31 +2,24 @@ input {
     border: none;
     border-radius: rem(4px);
     outline: none;
-
     &:focus {
         border: rem(2px) solid $yellow;
     }
-
     &[type=radio] {
         display: none;
     }
-
     &[type=checkbox] {
         display: none;
     }
-
     &[type=checkbox]:checked+.checkbox__label:before {
         background-image: url(../../img/delivery/check.png);
         background-repeat: no-repeat;
         background-position: center;
-
     }
-
     &[type=radio]:checked+.radio-label:before {
         background-image: url("../../img/Ellipse.svg");
         background-repeat: no-repeat;
         background-position: center;
-
     }
 }
 
@@ -34,7 +27,6 @@ textarea {
     border: none;
     border-radius: rem(4px);
     outline: none;
-
     &:focus {
         border: rem(2px) solid $yellow;
     }
@@ -49,17 +41,14 @@ textarea {
     background-position: center;
     background-size: cover;
     width: 100%;
-
     display: flex;
     align-items: center;
-
     &__title {
         color: rgb(249, 180, 59);
         line-height: 1;
         margin-bottom: rem(40px);
         text-align: center;
     }
-
     &__form {
         display: flex;
         font-size: rem(14px);
@@ -69,29 +58,24 @@ textarea {
         -moz-transform: matrix(1, 0, 0, 0.99986602382128, 0, 0);
         -webkit-transform: matrix(1, 0, 0, 0.99986602382128, 0, 0);
         -ms-transform: matrix(1, 0, 0, 0.99986602382128, 0, 0);
-
         @include tablets {
             flex-direction: column;
         }
     }
-
     &__form-part {
         float: left;
         width: rem(460px);
-
         @include tablets {
             margin-left: 0;
+            width: 99%;
         }
     }
-
     &__form-part_left {
         margin-right: rem(20px);
-
         @include tablets {
             margin-right: 0;
         }
     }
-
     &__form-input {
         font-size: rem(14px);
         padding: rem(10px);
@@ -99,89 +83,78 @@ textarea {
         border: rem(1px) solid #d1cfcb;
         border-radius: rem(5px);
         width: 100%;
+        margin-right: 5%;
     }
-
     &__form-textarea {
         height: rem(110px);
         margin-bottom: rem(13px);
     }
-
     &__form-label {
         display: block;
         width: 100%;
     }
-
+    &__form-block {
+        width: 100%;
+    }
     &__form-person {
         display: flex;
-        width: rem(460px);
+        width: 100%;
         justify-content: space-between;
     }
-
     &__form-adress {
         margin-top: rem(20px);
+        display: flex;
+        justify-content: space-between;
     }
-
-    &__form-input_adress {
-        width: rem(100px);
-    }
-
     &__adress-list {
         display: flex;
         justify-content: space-between;
         margin-top: rem(20px);
     }
-
-
+    &__adress-item {
+        width: 29%;
+    }
     &__adress-street {
         margin-top: rem(20px);
     }
-
     &__item-input {
         height: rem(35px);
         width: rem(100px);
-
     }
-
     &__input-title {
         margin-bottom: rem(10px);
-
         @include phones {
             margin-bottom: rem(5px);
         }
     }
-
+    &__form-block_none {
+        @include phones {
+            display: none;
+        }
+    }
     &__comment-input {
         width: rem(460px);
         height: rem(110px);
         margin-bottom: rem(15px);
     }
-
     &__extra-order {
         display: flex;
         align-items: center;
     }
-
     &__extra-radio {
         margin-bottom: rem(17px);
         display: flex;
         justify-content: left;
         align-items: center;
     }
-
     &__extra-checkbox {
         margin-bottom: rem(20px);
-
     }
-
     &__button {
         margin-right: rem(20px);
         border: none;
         outline: none;
     }
-
-
-
-
 }
 
 .checkbox__label {
@@ -197,7 +170,6 @@ textarea {
     height: rem(15px);
     background: #ffffff;
     margin-right: rem(10px);
-
 }
 
 .radio-label {
@@ -215,5 +187,4 @@ textarea {
     background: #ffffff;
     border-radius: 50%;
     margin-right: rem(10px);
-
 }

@@ -8,18 +8,15 @@
     position: fixed;
     top: 20%;
     right: rem(60px);
-
     &__item {
         margin: 0 0 rem(20px) 0;
     }
-
     &__link {
         position: relative;
         display: block;
         border-radius: 50%;
         width: rem(16px);
         height: rem(16px);
-
         &:before {
             display: block;
             position: absolute;
@@ -47,7 +44,6 @@
     background-image: url("/burgers/img/main_section_img/video-bg.png");
     background-size: cover;
     background-position: center center;
-
     &__content {
         flex: 1;
         display: flex;
@@ -55,30 +51,22 @@
         align-items: center;
         height: calc(100% - rem(100px));
         margin: -rem(100px) 0 0 0;
-
         @include tablets {
             flex-direction: column;
-
-
         }
     }
-
     &__text {
         margin-top: rem(100px);
-
         @include tablets {
             margin: 0;
         }
     }
-
-
 }
 
 .intro-left,
 .intro-right {
     width: 50%;
     float: left;
-
     @include tablets {
         width: 100%;
         float: none;
@@ -88,15 +76,12 @@
 .intro-right {
     @include tablets {
         text-align: center;
-        padding: rem(40px) 20% 0;
-
     }
 }
 
 .intro-left {
     @include tablets {
         text-align: center;
-
     }
 }
 
@@ -105,26 +90,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     &__nav {
         display: flex;
         align-items: center;
-
         .button {
             margin-left: rem(10px);
         }
     }
-
     .logo {
         margin-right: rem(70px);
     }
-
     &__links {
         display: flex;
         align-items: center;
     }
-
-
 }
 
 .logo__img {
@@ -146,7 +125,6 @@
         display: flex;
         align-items: center;
     }
-
     &__item {
         position: relative;
         font-size: rem(13px);
@@ -154,11 +132,9 @@
         text-transform: uppercase;
         line-height: 2.308;
         margin-left: rem(30px);
-
         &:first-child {
             margin: 0;
         }
-
         &::before {
             display: block;
             position: absolute;
@@ -171,25 +147,19 @@
             transform: translateY(-50%);
             left: rem(-19px);
         }
-
         &:first-child {
             &:before {
                 display: none;
             }
         }
-
         @include tablets {
             display: none;
         }
     }
-
     &__link {
         color: rgb(255, 255, 255);
     }
-
-
 }
-
 
 .button__nav {
     vertical-align: middle;
@@ -198,7 +168,6 @@
     align-items: center;
     margin-left: rem(30px);
     display: none;
-
     @include tablets {
         display: flex;
     }
@@ -211,10 +180,7 @@
     width: rem(24px);
     height: rem(5px);
     border-radius: rem(3px);
-
 }
-
-
 
 .intro__title {
     color: $yellow;
@@ -233,10 +199,6 @@
         font-size: rem(50px);
     }
 }
-
-
-
-
 
 .button {
     font-size: rem(13px);

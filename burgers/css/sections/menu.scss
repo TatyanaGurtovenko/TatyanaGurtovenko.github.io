@@ -1,51 +1,41 @@
 .menu {
-    height: 100%;
     width: 100%;
     background-image: url("../../img/menu/bg_menu.png");
     background-size: cover;
     background-position: center center;
     position: relative;
-
     &__title {
         position: absolute;
         top: rem(110px);
         color: rgb(255, 255, 255);
         line-height: 1;
     }
-
     &__content {
         position: absolute;
         top: 0;
         bottom: 0;
         right: 0;
     }
-
     &__list {
         height: 100%;
         display: flex;
     }
-
     &__item {
         height: 100%;
         display: flex;
-
         &.active {
             .menu__item-block {
                 display: flex;
             }
-
         }
     }
-
     &__subtitle {
         height: 100%;
         background-size: cover;
         background-position: center center;
         width: rem(80px);
         position: relative;
-
         & p {
-
             font-size: rem(40px);
             font-family: "gagalinregular";
             color: rgb(255, 255, 255);
@@ -57,16 +47,13 @@
             white-space: nowrap;
         }
     }
-
     &__item-block {
         display: none;
         width: rem(350px);
         background-color: rgba(0, 0, 0, 0.5);
         color: #fff;
         padding: rem(60px), rem(30px), rem(60px), rem(30px);
-
     }
-
     &__text {
         margin-top: rem(55px);
         margin-left: rem(35px);

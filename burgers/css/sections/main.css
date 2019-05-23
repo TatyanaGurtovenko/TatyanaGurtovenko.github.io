@@ -176,8 +176,7 @@ h6 {
 
 @media screen and (max-width: 768px) {
   .intro-right {
-    text-align: center;
-    padding: 2.5rem 20% 0; } }
+    text-align: center; } }
 
 @media screen and (max-width: 768px) {
   .intro-left {
@@ -505,7 +504,7 @@ h6 {
   margin-bottom: 1.5625rem; }
   @media screen and (max-width: 480px) {
     .reviews__text-title {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       margin-bottom: 1.875rem; } }
 
 .reviews__text-par {
@@ -670,7 +669,6 @@ h6 {
     -ms-transform: matrix(1.0, 0, 0, 1.00058, 0, 0); }
 
 .menu {
-  height: 100%;
   width: 100%;
   background-image: url("../../img/menu/bg_menu.png");
   background-size: cover;
@@ -732,7 +730,9 @@ h6 {
 .map {
   background-image: url("../../img/map_bg.png");
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
+  background-size: cover;
   position: relative; }
 
 .footer {
@@ -873,7 +873,8 @@ textarea {
     width: 28.75rem; }
     @media screen and (max-width: 768px) {
       .delivery__form-part {
-        margin-left: 0; } }
+        margin-left: 0;
+        width: 99%; } }
   .delivery__form-part_left {
     margin-right: 1.25rem; }
     @media screen and (max-width: 768px) {
@@ -885,25 +886,32 @@ textarea {
     padding: 0.3125rem 0.625rem;
     border: 0.0625rem solid #d1cfcb;
     border-radius: 0.3125rem;
-    width: 100%; }
+    width: 100%;
+    margin-right: 5%; }
   .delivery__form-textarea {
     height: 6.875rem;
     margin-bottom: 0.8125rem; }
   .delivery__form-label {
     display: block;
     width: 100%; }
+  .delivery__form-block {
+    width: 100%; }
   .delivery__form-person {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 28.75rem;
+    width: 100%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .delivery__form-adress {
-    margin-top: 1.25rem; }
-  .delivery__form-input_adress {
-    width: 6.25rem; }
+    margin-top: 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .delivery__adress-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -912,6 +920,8 @@ textarea {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 1.25rem; }
+  .delivery__adress-item {
+    width: 29%; }
   .delivery__adress-street {
     margin-top: 1.25rem; }
   .delivery__item-input {
@@ -922,6 +932,9 @@ textarea {
     @media screen and (max-width: 480px) {
       .delivery__input-title {
         margin-bottom: 0.3125rem; } }
+  @media screen and (max-width: 480px) {
+    .delivery__form-block_none {
+      display: none; } }
   .delivery__comment-input {
     width: 28.75rem;
     height: 6.875rem;

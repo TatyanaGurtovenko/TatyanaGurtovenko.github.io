@@ -1,8 +1,9 @@
 .map {
     background-image: url("../../img/map_bg.png");
     background-position: center;
-
+    background-repeat: no-repeat; 
     width: 100%;
+    background-size: cover;
     position: relative;
 }
 
