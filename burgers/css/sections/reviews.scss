@@ -55,14 +55,13 @@
         font-size: rem(14px);
         font-family: "gagalinregular";
         color: rgb(255, 255, 255);
-        line-height: 2.008;
+        line-height: 1, 5;
         -moz-transform: matrix(0.99883262359814, 0, 0, 1.00409157252179, 0, 0);
         -webkit-transform: matrix(0.99883262359814, 0, 0, 1.00409157252179, 0, 0);
         -ms-transform: matrix(0.99883262359814, 0, 0, 1.00409157252179, 0, 0);
         margin-bottom: rem(25px);
         @include phones {
             font-size: rem(20px);
-            margin-bottom: rem(30px);
         }
     }
     &__text-par {
@@ -95,7 +94,7 @@
         text-transform: uppercase;
         line-height: 2.308;
         background-color: #2f3234;
-        padding: rem(12px) rem(15px);
+        padding: 5% 7%;
         border-radius: rem(3px);
         display: none;
         @include phones {

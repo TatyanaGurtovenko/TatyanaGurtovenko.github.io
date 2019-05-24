@@ -97,9 +97,13 @@ textarea {
         width: 100%;
     }
     &__form-person {
-        display: flex;
+        display: grid;
         width: 100%;
-        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: rem(20px);
+        @include phones {
+            grid-gap: rem(10px);
+        }
     }
     &__form-adress {
         margin-top: rem(20px);
@@ -107,12 +111,18 @@ textarea {
         justify-content: space-between;
     }
     &__adress-list {
-        display: flex;
-        justify-content: space-between;
         margin-top: rem(20px);
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: rem(20px);
+        @include phones {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: rem(10px);
+        }
     }
     &__adress-item {
-        width: 29%;
+        width: 100%;
     }
     &__adress-street {
         margin-top: rem(20px);

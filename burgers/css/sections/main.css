@@ -497,15 +497,14 @@ h6 {
   font-size: 0.875rem;
   font-family: "gagalinregular";
   color: white;
-  line-height: 2.008;
+  line-height: 1, 5;
   -moz-transform: matrix(0.99883, 0, 0, 1.00409, 0, 0);
   -webkit-transform: matrix(0.99883, 0, 0, 1.00409, 0, 0);
   -ms-transform: matrix(0.99883, 0, 0, 1.00409, 0, 0);
   margin-bottom: 1.5625rem; }
   @media screen and (max-width: 480px) {
     .reviews__text-title {
-      font-size: 1.25rem;
-      margin-bottom: 1.875rem; } }
+      font-size: 1.25rem; } }
 
 .reviews__text-par {
   font-size: 0.875rem;
@@ -537,7 +536,7 @@ h6 {
   text-transform: uppercase;
   line-height: 2.308;
   background-color: #2f3234;
-  padding: 0.75rem 0.9375rem;
+  padding: 5% 7%;
   border-radius: 0.1875rem;
   display: none; }
   @media screen and (max-width: 480px) {
@@ -897,13 +896,15 @@ textarea {
   .delivery__form-block {
     width: 100%; }
   .delivery__form-person {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
     width: 100%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.25rem; }
+    @media screen and (max-width: 480px) {
+      .delivery__form-person {
+        grid-gap: 0.625rem; } }
   .delivery__form-adress {
     margin-top: 1.25rem;
     display: -webkit-box;
@@ -913,15 +914,20 @@ textarea {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .delivery__adress-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: 1.25rem; }
+    margin-top: 1.25rem;
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.25rem; }
+    @media screen and (max-width: 480px) {
+      .delivery__adress-list {
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0.625rem; } }
   .delivery__adress-item {
-    width: 29%; }
+    width: 100%; }
   .delivery__adress-street {
     margin-top: 1.25rem; }
   .delivery__item-input {
