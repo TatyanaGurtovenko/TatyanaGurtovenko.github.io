@@ -1,128 +1,126 @@
-.team {
-
-    width: 100%;
-    background-image: url("../../img/team/bg_team.png");
-    background-size: cover;
-    background-position: center center;
-
-    &__title {
-        margin-bottom: rem(55px);
-        color: $yellow;
-    }
-
-    &__block {
-        display: flex;
-        left: 50%;
-        height: 100%;
-        position: absolute;
-        right: 0;
-        background-color: rgba(52, 55, 57, 0.9);
-        flex-direction: column;
-        padding: rem(110px) rem(95px) rem(140px) rem(95px);
-
-        @include tablets {
-            left: 0;
-            align-items: center;
-            justify-content: center;
-
-        }
-    }
-
-
-}
-
-.accordeon {
-
-    display: flex;
-    flex-direction: column;
-
-    &__item {
-        @include tablets {
-            text-align: center;
-        }
-
-        &:last-child {
-            margin-bottom: 0px;
-        }
-
-        &.active {
-            .accordeon__item-desc {
-                display: flex;
-                align-items: center;
-                margin-bottom: rem(45px);
-
-                @include tablets {
-                    flex-direction: column;
-                    align-items: center;
-
-                }
-
-            }
-        }
-    }
-
-    &__item-link {
-        @include tablets {
-            display: inline-flex;
-            font-size: rem(24px);
-        }
-
-        font-size: rem(14px);
-        font-family: "gagalinregular";
-        color: rgb(255, 255, 255);
-        line-height: 1;
-        -moz-transform: matrix(0.9988325837003, 0, 0, 1.00467749358702, 0, 0);
-        -webkit-transform: matrix(0.9988325837003, 0, 0, 1.00467749358702, 0, 0);
-        -ms-transform: matrix(0.9988325837003, 0, 0, 1.00467749358702, 0, 0);
-        margin-bottom: rem(20px);
-        position: relative;
-        padding-left: rem(18px);
-    }
-
-    &__item-desc {
-        display: none;
-
-    }
-
-    &__item-link:before {
-        content: "";
-        border: rem(5px) solid transparent;
-        border-top: rem(5px) solid $yellow;
-        position: absolute;
-        left: 0px;
-        top: 50%;
-    }
-
-    &__item-title {
-        margin-bottom: rem(25px);
-        font-size: rem(14px);
-        font-family: "Ubuntu";
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        -moz-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
-        -webkit-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
-        -ms-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
-    }
-
-    &__item-avatar {
-        margin-right: rem(30px);
-        border-radius: 50%;
-        width: rem(100px);
-        height: rem(100px);
-
-        @include tablets {
-            margin-right: 0;
-        }
-    }
-
-    &__item-about {
-        width: 210px;
-        font-size: 14px;
-        font-family: "Ubuntu";
-        color: rgb(255, 255, 255);
-        -moz-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
-        -webkit-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
-        -ms-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
-    }
-
-}
+ .team {
+     width: 100%;
+     background-image: url("../../img/team/bg_team.png");
+     background-size: cover;
+     background-position: center center;
+     &__title {
+         margin-bottom: rem(55px);
+         color: $yellow;
+     }
+     &__block {
+         display: flex;
+         left: 50%;
+         height: 100%;
+         position: absolute;
+         right: 0;
+         background-color: rgba(52, 55, 57, 0.9);
+         flex-direction: column;
+         padding: rem(110px) rem(95px) rem(140px) rem(95px);
+         @include tablets {
+             left: 0;
+             align-items: center;
+             justify-content: center;
+         }
+     }
+ }
+ 
+ .accordeon {
+     display: flex;
+     flex-direction: column;
+     &__item {
+         @include tablets {
+             text-align: center;
+         }
+         &:last-child {
+             margin-bottom: 0px;
+         }
+     }
+     &__item-link {
+         @include tablets {
+             display: inline-flex;
+             font-size: rem(24px);
+         }
+         font-size: rem(14px);
+         font-family: "gagalinregular";
+         color: rgb(255,
+         255,
+         255);
+         line-height: 1;
+         -moz-transform: matrix(0.9988325837003,
+         0,
+         0,
+         1.00467749358702,
+         0,
+         0);
+         -webkit-transform: matrix(0.9988325837003,
+         0,
+         0,
+         1.00467749358702,
+         0,
+         0);
+         -ms-transform: matrix(0.9988325837003,
+         0,
+         0,
+         1.00467749358702,
+         0,
+         0);
+         margin-bottom: rem(20px);
+         position: relative;
+         padding-left: rem(18px);
+     }
+     &__item-desc {
+         max-height: 0;
+         height: auto;
+         overflow: hidden;
+     }
+     &__item-link:before {
+         content: "";
+         border: rem(5px) solid transparent;
+         border-top: rem(5px) solid $yellow;
+         position: absolute;
+         left: 0px;
+         top: 50%;
+     }
+     &__item-title {
+         margin-bottom: rem(25px);
+         font-size: rem(14px);
+         font-family: "Ubuntu";
+         color: rgb(255, 255, 255);
+         font-weight: bold;
+         -moz-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
+         -webkit-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
+         -ms-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
+     }
+     &__item-avatar {
+         margin-right: rem(30px);
+         border-radius: 50%;
+         width: rem(100px);
+         height: rem(100px);
+         @include tablets {
+             margin-right: 0;
+         }
+     }
+     &__item-about {
+         width: 210px;
+         font-size: 14px;
+         font-family: "Ubuntu";
+         color: rgb(255, 255, 255);
+         -moz-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
+         -webkit-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
+         -ms-transform: matrix(0.99999996005553, 0, 0, 1.00058353349561, 0, 0);
+     }
+ }
+ 
+ .accordeon__item-link--active~.accordeon__item-desc {
+     max-height: 250px;
+     margin-left: rem(20px);
+     margin-bottom: rem(40px);
+     transition: .7s;
+     @include tablets {
+         margin-left: 0;
+         text-align: center;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+     }
+ }

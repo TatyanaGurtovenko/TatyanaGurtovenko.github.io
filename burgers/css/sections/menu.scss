@@ -23,11 +23,6 @@
     &__item {
         height: 100%;
         display: flex;
-        &.active {
-            .menu__item-block {
-                display: flex;
-            }
-        }
     }
     &__subtitle {
         height: 100%;
@@ -59,4 +54,8 @@
         margin-left: rem(35px);
         margin-right: rem(35px);
     }
+}
+
+.menu__subtitle--active~.menu__item-block {
+    display: block;
 }
