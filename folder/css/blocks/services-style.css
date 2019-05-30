@@ -1,76 +1,71 @@
 .right-content {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin-top: rem(45px);
-
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 45px;
 }
 
 .start-page {
-  display: flex;
+    display: flex;
 }
 
 .left-content {
-  display: flex;
-  flex-direction: column;
-  margin-top: rem(45px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
 }
 
-
-
 .services__title-services {
-  font-size: rem(49px);
-  font-family: "Open Sans";
-  color: rgb(34, 31, 31);
-  font-weight: bold;
-  text-transform: uppercase;
+    font-size: 49px;
+    font-family: "Open Sans";
+    color: rgb(34, 31, 31);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .services__list {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .subtitle {
-  line-height: 1;
-  margin-top: rem(30px);
-  margin-bottom: rem(13px);
-  font-size: rem(18px);
-  font-family: "Open Sans";
-  font-weight: bold;
-
-
+    line-height: 1;
+    margin-top: 30px;
+    margin-bottom: 13px;
+    font-size: 18px;
+    font-family: "Open Sans";
+    font-weight: bold;
 }
 
 .services__item {
-  display: flex;
-  flex-direction: column;
-  width: rem(250px);
-  height: rem(415px);
-  margin-right: rem(60px);
-  margin-bottom: rem(60px);
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 415px;
+    margin-right: 60px;
+    margin-bottom: 60px;
 }
 
 .services__image {
-  width: rem(250px);
-  height: rem(154px);
+    width: 250px;
+    height: 154px;
 }
 
 .services__desc {
-  font-size: rem(14px);
-  font-family: "Open Sans";
-  color: rgb(34, 31, 31);
-  font-weight: bold;
-  width: rem(265px);
-  letter-spacing: -0.rem(9px);
-  line-height: 21.rem(02px);
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(34, 31, 31);
+    font-weight: bold;
+    width: 265px;
+    letter-spacing: -0.9px;
+    line-height: 21.02px;
 }
 
 .services {
-  margin-left: rem(23px);
-  margin-bottom: rem(55px);
+    margin-left: 23px;
+    margin-bottom: 55px;
 }
 
 .services__blocks {
-  margin-bottom: rem(30px);
+    margin-bottom: 30px;
 }

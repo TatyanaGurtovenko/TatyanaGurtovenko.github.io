@@ -102,3 +102,14 @@ h6 {
         font-size: rem(63px);
     }
 }
+
+.scroll__img {
+    width: rem(30px);
+    height: rem(15px);
+}
+
+.scroll {
+    position: absolute;
+    left: 50%;
+    bottom: rem(40px);
+}

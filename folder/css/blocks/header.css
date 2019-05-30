@@ -1,31 +1,28 @@
 .header {
-  position: relative;
-  background-color: black;
-  
+    position: relative;
+    background-color: black;
 }
 
 .header-content {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: rem(16px); 
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
 }
 
 .logo {
-  color: orange;
+    color: orange;
 }
 
 .nav {
-  display: flex;
+    display: flex;
 }
 
 .nav__item {
-  margin: 0 rem(10px) 0 0;
+    margin: 0 10px 0 0;
 }
 
 .nav__link:hover .nav__title {
-  color: orange;
+    color: orange;
 }
-
-

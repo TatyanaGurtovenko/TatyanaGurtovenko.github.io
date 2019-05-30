@@ -65,6 +65,8 @@
         }
     }
     &__text-par {
+        max-height: 60%;
+        overflow: hidden;
         font-size: rem(14px);
         font-family: "Ubuntu";
         color: rgb(255, 255, 255);

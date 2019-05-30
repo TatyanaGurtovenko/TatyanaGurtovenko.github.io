@@ -10,35 +10,30 @@
     background-image: url("/burgers/img/advantage_img/advantage_bg.png");
     background-size: cover;
     background-position: center center;
-
     &__title {
         color: $gray;
     }
-
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
     &__list {
         display: flex;
         margin-top: rem(55px);
-
         @include phones {
             flex-direction: column;
             margin-top: rem(30px);
         }
     }
-
     &__item {
+        width: 35%;
         margin-bottom: rem(50px);
         padding: 0 rem(15px);
         display: flex;
         flex-direction: column;
         text-align: center;
-
         @include phones {
             flex-direction: row;
             width: 100%;
@@ -46,11 +41,9 @@
             text-align: left;
         }
     }
-
     &__item:first-child {
         margin-left: 0;
     }
-
     &__tagline {
         font-size: rem(24px);
         font-family: "lifehack_medium";
@@ -61,7 +54,6 @@
         -ms-transform: matrix(0.99883262359814, 0, 0, 1.00494012923551, 0, 0);
         margin-bottom: rem(25px);
     }
-
     &__text {
         font-size: rem(14px);
         font-family: "Ubuntu";
@@ -70,22 +62,17 @@
         -moz-transform: matrix(1, 0, 0, 1.00084509893015, 0, 0);
         -webkit-transform: matrix(1, 0, 0, 1.00084509893015, 0, 0);
         -ms-transform: matrix(1, 0, 0, 1.00084509893015, 0, 0);
-
     }
-
     &__image {
         width: rem(97px);
         height: rem(89px);
         margin-bottom: rem(33px);
         margin: 0 auto rem(33px) auto;
-
         @include phones {
             margin-right: rem(20px);
             width: 30%;
         }
-
     }
-
     &__desc {
         @include phones {
             text-align: left;

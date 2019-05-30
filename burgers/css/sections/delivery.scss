@@ -1,5 +1,5 @@
 input {
-    border: none;
+    border: rem(2px) solid transparent;
     border-radius: rem(4px);
     outline: none;
     &:focus {
@@ -24,7 +24,7 @@ input {
 }
 
 textarea {
-    border: none;
+    border: rem(2px) solid transparent;
     border-radius: rem(4px);
     outline: none;
     &:focus {
@@ -80,10 +80,7 @@ textarea {
         font-size: rem(14px);
         padding: rem(10px);
         padding: rem(5px) rem(10px);
-        border: rem(1px) solid #d1cfcb;
-        border-radius: rem(5px);
         width: 100%;
-        margin-right: 5%;
     }
     &__form-textarea {
         height: rem(110px);
@@ -168,7 +165,7 @@ textarea {
 }
 
 .checkbox__label {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     cursor: pointer;
 }

@@ -1,0 +1,122 @@
+.slider {
+    width: 100%;
+    position: relative;
+    background-image: -moz-linear-gradient( 90deg, rgb(249, 180, 59) 0%, rgb(235, 140, 56) 48%, rgb(249, 180, 59) 74%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(249, 180, 59) 0%, rgb(235, 140, 56) 48%, rgb(249, 180, 59) 74%);
+    background-image: -ms-linear-gradient( 90deg, rgb(249, 180, 59) 0%, rgb(235, 140, 56) 48%, rgb(249, 180, 59) 74%);
+    &__content {
+        display: flex;
+        flex-direction: row;
+    }
+    &__left {
+        display: flex;
+    }
+    &__title {
+        color: #fff;
+        line-height: 1;
+        margin-bottom: rem(50px);
+    }
+    &__cost {
+        display: flex;
+        align-items: baseline;
+    }
+    &__cost-num {
+        font-size: rem(71.707px);
+        font-family: "gagalinregular";
+        color: rgb(227, 80, 40);
+        line-height: 1;
+        -moz-transform: matrix( 0.99852682873382, 0, 0, 1.00291898435399, 0, 0);
+        -webkit-transform: matrix( 0.99852682873382, 0, 0, 1.00291898435399, 0, 0);
+        -ms-transform: matrix( 0.99852682873382, 0, 0, 1.00291898435399, 0, 0);
+        margin-right: rem(10px);
+    }
+    &__composition {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    &__composition-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $orange;
+        border-radius: rem(3px);
+        width: rem(80px);
+        height: rem(80px);
+    }
+    &__composition-icon {
+        width: rem(40px);
+        height: rem(40px);
+    }
+    &__composition-text {
+        font-size: rem(14px);
+        font-family: "gagalinregular";
+        color: rgb(255, 255, 255);
+        line-height: 2.008;
+        -moz-transform: matrix( 0.99883262359814, 0, 0, 1.00409157252179, 0, 0);
+        -webkit-transform: matrix( 0.99883262359814, 0, 0, 1.00409157252179, 0, 0);
+        -ms-transform: matrix( 0.99883262359814, 0, 0, 1.00409157252179, 0, 0);
+    }
+    &__composition-extra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: rem(60px);
+        height: rem(80px);
+    }
+    &__extra-icon {
+        width: rem(60px);
+        height: rem(60px);
+        fill: rgba(255, 255, 255, 0.502);
+    }
+    &__extra-text {
+        font-size: rem(14px);
+        font-family: "gagalinregular";
+        color: rgba(255, 255, 255, 0.502);
+        -moz-transform: matrix( 0.99883262359814, 0, 0, 1.00409157252179, 0, 0);
+        -webkit-transform: matrix( 0.99883262359814, 0, 0, 1.00409157252179, 0, 0);
+        -ms-transform: matrix( 0.99883262359814, 0, 0, 1.00409157252179, 0, 0);
+    }
+    &__desc {
+        font-size: rem(14px);
+        font-family: "Ubuntu";
+        color: rgb(255, 255, 255);
+        line-height: 1.714;
+        -moz-transform: matrix( 0.99969384774076, 0, 0, 0.99883219001146, 0, 0);
+        -webkit-transform: matrix( 0.99969384774076, 0, 0, 0.99883219001146, 0, 0);
+        -ms-transform: matrix( 0.99969384774076, 0, 0, 0.99883219001146, 0, 0);
+        margin-bottom: rem(40px);
+    }
+    &__image {
+        display: flex;
+        align-items: center;
+    }
+    &__buy {
+        display: flex;
+    }
+    &__cost-text {
+        font-size: rem(35px);
+        margin-right: rem(30px);
+        line-height: 1;
+        font-family: "gagalinregular";
+        color: rgb(227, 80, 40);
+        line-height: 1;
+        -moz-transform: matrix( 0.99852682873382, 0, 0, 1.00291898435399, 0, 0);
+        -webkit-transform: matrix( 0.99852682873382, 0, 0, 1.00291898435399, 0, 0);
+        -ms-transform: matrix( 0.99852682873382, 0, 0, 1.00291898435399, 0, 0);
+    }
+    &__popup-text {
+        font-size: rem(14px);
+        font-family: "Ubuntu";
+        color: rgb(47, 50, 52);
+        line-height: 1;
+    }
+    &__popup-extra {
+        font-size: rem(14px);
+        font-family: "Ubuntu";
+        color: rgb(47, 50, 52);
+        line-height: 1;
+    }
+}

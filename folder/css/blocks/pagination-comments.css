@@ -1,67 +1,68 @@
 .pagination {
-  display: inline-flex;
-  justify-content: center;
-  margin-top: rem(50px);
-  margin-left: rem(110px);
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 110px;
 }
 
 .pagination__controls {
-  display: flex;
+    display: flex;
 }
 
 .pagination__pages {
-  display: flex;
+    display: flex;
 }
 
 .pagination__display {
-  font-size: rem(14px);
-  font-family: "Roboto";
-  color: rgb(101, 100, 100);
-  line-height: 1.5;
-  text-align: left;
-  -moz-transform: matrix(1.00122601572696, 0, 0, 1, 0, 0);
-  -webkit-transform: matrix(1.00122601572696, 0, 0, 1, 0, 0);
-  -ms-transform: matrix(1.00122601572696, 0, 0, 1, 0, 0);
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(101, 100, 100);
+    line-height: 1.5;
+    text-align: left;
+    -moz-transform: matrix(1.00122601572696, 0, 0, 1, 0, 0);
+    -webkit-transform: matrix(1.00122601572696, 0, 0, 1, 0, 0);
+    -ms-transform: matrix(1.00122601572696, 0, 0, 1, 0, 0);
 }
 
 .pagination__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: rem(14px);
-  font-family: "Roboto";
-  color: black;
-  font-weight: bold;
-  -moz-transform: matrix(1.00122601572696, 0, 0, 1, 0, 0);
-  -webkit-transform: matrix(1.00122601572696, 0, 0, 1, 0, 0);
-  -ms-transform: matrix(1.00122601572696, 0, 0, 1, 0, 0);
-  width: rem(25px);
-  height: rem(24px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: black;
+    font-weight: bold;
+    -moz-transform: matrix(1.00122601572696, 0, 0, 1, 0, 0);
+    -webkit-transform: matrix(1.00122601572696, 0, 0, 1, 0, 0);
+    -ms-transform: matrix(1.00122601572696, 0, 0, 1, 0, 0);
+    width: 25px;
+    height: 24px;
 }
 
 .pagination__prev {
-  font-size: rem(14px);
-  font-family: "Roboto";
-  font-weight: bold;
-  opacity: 0.3;
-  padding-left: rem(10px);
-  padding-right: rem(17px);
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: bold;
+    opacity: 0.3;
+    padding-left: 10px;
+    padding-right: 17px;
 }
 
 .pagination__next {
-  font-size: rem(14px);
-  font-family: "Roboto";
-  font-weight: bold;
-  padding-left: rem(17px);
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: bold;
+    padding-left: 17px;
 }
 
 .pagination__link-active {
-  border-radius: rem(3px);
-  background-color: black;
-  color: rgb(248, 149, 19);
-  width: rem(25px);
-  height: rem(25px);
+    border-radius: 3px;
+    background-color: black;
+    color: rgb(248, 149, 19);
+    width: 25px;
+    height: 25px;
 }
+
 .pagination__link:hover {
-  color: rgb(248, 149, 19);
+    color: rgb(248, 149, 19);
 }

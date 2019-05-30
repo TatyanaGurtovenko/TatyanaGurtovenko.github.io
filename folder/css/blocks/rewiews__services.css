@@ -1,83 +1,70 @@
 .services__text {
-  font-size: rem(18px);
-  font-family: "Open Sans";
-  color: rgb(255, 255, 255);
-  line-height: 1.667;
-
+    font-size: 18px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
 }
 
-
-
-
-
 .application {
-  color: rgb(248, 149, 19);
+    color: rgb(248, 149, 19);
 }
 
 .services__title-services {
-  font-size: rem(49px);
-  font-family: "Open Sans";
-  color: rgb(34, 31, 31);
-  font-weight: bold;
-  text-transform: uppercase;
+    font-size: 49px;
+    font-family: "Open Sans";
+    color: rgb(34, 31, 31);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .services__list {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .subtitle {
-  line-height: 1;
-  margin-top: rem(30px);
-  margin-bottom: rem(13px);
-  font-size: rem(18px);
-  font-family: "Open Sans";
-  font-weight: bold;
+    line-height: 1;
+    margin-top: 30px;
+    margin-bottom: 13px;
+    font-size: 18px;
+    font-family: "Open Sans";
+    font-weight: bold;
 }
 
-
-
 .services__image {
-  max-width: rem(250px);
-  max-height: rem(154px);
+    max-width: 250px;
+    max-height: 154px;
 }
 
 .services__desc {
-  font-size: rem(14px);
-  font-family: "Open Sans";
-  color: rgb(34, 31, 31);
-  font-weight: bold;
-  width: rem(265px);
-  letter-spacing: -0.rem(9px);
-  line-height: 21.rem(02px);
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(34, 31, 31);
+    font-weight: bold;
+    width: 265px;
+    letter-spacing: -0.9px;
+    line-height: 21.02px;
 }
 
 .services {
-  background: url("../../img/background.png");
-  display: inline-flex;
-  width: rem(274px);
-  height: rem(436px);
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-top: rem(40px);
+    background: url("../../img/background.png");
+    display: inline-flex;
+    width: 274px;
+    height: 436px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 }
 
-
-
-
 .services__blocks {
-  margin-bottom: rem(30px);
+    margin-bottom: 30px;
 }
 
 .services__container {
-  width: rem(225px);
-  height: rem(384px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 225px;
+    height: 384px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
-
