@@ -7,20 +7,34 @@
     &__content {
         display: flex;
         flex-direction: row;
+        @include tablets {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 88%;
+            text-align: center;
+        }
+    }
+    &__container {
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        display: flex;
     }
     &__left {
         display: flex;
+        position: relative;
+        @include tablets {
+            flex-direction: column;
+        }
     }
     &__title {
         color: #fff;
         line-height: 1;
         margin-bottom: rem(50px);
     }
-    &__cost {
-        display: flex;
-        align-items: baseline;
-    }
-    &__cost-num {
+    &__buy-num {
+        display: inline-flex;
         font-size: rem(71.707px);
         font-family: "gagalinregular";
         color: rgb(227, 80, 40);
@@ -34,16 +48,26 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        position: relative;
+        @include tablets {
+            flex-direction: row;
+        }
     }
     &__composition-block {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: $orange;
+        background-color: #f08c33;
         border-radius: rem(3px);
         width: rem(80px);
         height: rem(80px);
+        &:hover+ {
+            .slider__popup {
+                opacity: 1;
+                transition: 1s;
+            }
+        }
     }
     &__composition-icon {
         width: rem(40px);
@@ -92,13 +116,22 @@
     &__image {
         display: flex;
         align-items: center;
+        width: rem(450px);
+        @include phones {
+            width: rem(340px);
+        }
     }
-    &__buy {
-        display: flex;
+    &__image-pic {
+        max-width: 100%;
+        max-height: 100%;
     }
-    &__cost-text {
+    &__button {
+        display: inline-flex;
+    }
+    &__buy-text {
+        display: inline-flex;
         font-size: rem(35px);
-        margin-right: rem(30px);
+        margin-right: rem(20px);
         line-height: 1;
         font-family: "gagalinregular";
         color: rgb(227, 80, 40);
@@ -107,16 +140,65 @@
         -webkit-transform: matrix( 0.99852682873382, 0, 0, 1.00291898435399, 0, 0);
         -ms-transform: matrix( 0.99852682873382, 0, 0, 1.00291898435399, 0, 0);
     }
-    &__popup-text {
-        font-size: rem(14px);
-        font-family: "Ubuntu";
-        color: rgb(47, 50, 52);
-        line-height: 1;
+    &__popup {
+        background-color: rgba(255, 255, 255, .9);
+        position: absolute;
+        border-radius: rem(3px);
+        left: rem(80px);
+        top: 0;
+        opacity: 0;
     }
-    &__popup-extra {
+    &__popup-content {
+        margin: rem(15px);
+    }
+    &__popup-item {
+        display: flex;
+        align-items: center;
+    }
+    &__popup-product {
         font-size: rem(14px);
         font-family: "Ubuntu";
         color: rgb(47, 50, 52);
         line-height: 1;
+        padding-right: rem(65px);
+    }
+    &__popup-weight {
+        font-size: rem(14px);
+        font-family: "Ubuntu";
+        color: rgb(47, 50, 52);
+        line-height: 1;
+        text-align: right;
+    }
+    &__popup-line {
+        height: rem(55px);
+    }
+    &__popup-img {
+        width: rem(50px);
+        height: rem(40px);
+    }
+    &__popup-icon {
+        padding-right: rem(20px);
+    }
+    &__arrow {
+        top: 50%;
+        position: absolute;
+    }
+    &__arrow-img {
+        width: rem(30px);
+        height: rem(15px);
+    }
+    &__arrow-left {
+        right: rem(-45px);
+        transform: rotate(-90deg);
+        @include tablets {
+            right: rem(-5px);
+        }
+    }
+    &__arrow-right {
+        left: rem(-45px);
+        transform: rotate(90deg);
+        @include tablets {
+            left: rem(-5px);
+        }
     }
 }

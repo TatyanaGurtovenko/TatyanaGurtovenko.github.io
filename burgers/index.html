@@ -162,53 +162,82 @@
             </div>
         </section>
         <section class="section slider" id="burgers">
-            <div class="container">
+            <div class="container slider__container">
+                <a href="#" class="slider__arrow slider__arrow-left">
+                    <svg class="slider__arrow-img">
+                            <use xlink:href="../burgers/img/sprite.svg#scroll"></use>
+                          </svg>
+                </a>
+                <a href="#" class="slider__arrow slider__arrow-right">
+                    <svg class="slider__arrow-img">
+                                <use xlink:href="../burgers/img/sprite.svg#scroll"></use>
+                              </svg>
+                </a>
                 <div class="slider__content">
                     <div class="slider__left">
                         <div class="slider__composition">
                             <div class="slider__composition-block">
+
                                 <svg class="slider__composition-icon">
                                         <use xlink:href="../burgers/img/sprite.svg#burger"></use>
                                       </svg>
                                 <div class="slider__composition-text">Состав</div>
-                                <div class="slider__popup">
-                                    <div class="slider__popup-content">
-                                        <ul class="slider__popup-list">
-                                            <li class="slider__popup-item">
-                                                <img src="" alt="">
-                                                <span class="slider__popup-text">Говядина</span>
-                                                <span class="slider__popup-extra">300г</span>
-                                            </li>
-                                            <li class="slider__popup-item">
-                                                <img src="" alt="">
-                                                <span class="slider__popup-text">Булочки</span>
-                                                <span class="slider__popup-extra">100г</span>
-                                            </li>
-                                            <li class="slider__popup-item">
-                                                <img src="" alt="">
-                                                <span class="slider__popup-text">Зелень</span>
-                                                <span class="slider__popup-extra">70г</span>
-                                            </li>
-                                            <li class="slider__popup-item">
-                                                <img src="" alt="">
-                                                <span class="slider__popup-text">Соус</span>
-                                                <span class="slider__popup-extra">150г</span>
-                                            </li>
-                                            <li class="slider__popup-item">
-                                                <img src="" alt="">
-                                                <span class="slider__popup-text">Овощи</span>
-                                                <span class="slider__popup-extra">200г</span>
-                                            </li>
-                                            <li class="slider__popup-item">
-                                                <img src="" alt="">
-                                                <span class="slider__popup-text">Сыр</span>
-                                                <span class="slider__popup-extra">80г</span>
-                                            </li>
-
-                                        </ul>
-                                    </div>
+                            </div>
+                            <div class="slider__popup">
+                                <div class="slider__popup-content">
+                                    <table class="slider__popup-table">
+                                        <tr class="slider__popup-line">
+                                            <td class="slider__popup-icon">
+                                                <svg class="slider__popup-img">
+                                                <use xlink:href="../burgers/img/sprite.svg#beef"></use>
+                                              </svg></td>
+                                            <td class="slider__popup-product">Говядина</td>
+                                            <td class="slider__popup-weight">300г</td>
+                                        </tr>
+                                        <tr class="slider__popup-line">
+                                            <td class="slider__popup-icon">
+                                                <svg class="slider__popup-img">
+                                                        <use xlink:href="../burgers/img/sprite.svg#buns"></use>
+                                                    </svg></td>
+                                            <td class="slider__popup-product">Булочки</td>
+                                            <td class="slider__popup-weight">100г</td>
+                                        </tr>
+                                        <tr class="slider__popup-line">
+                                            <td class="slider__popup-icon">
+                                                <svg class="slider__popup-img">
+                                                            <use xlink:href="../burgers/img/sprite.svg#salad"></use>
+                                                        </svg></td>
+                                            <td class="slider__popup-product">Зелень</td>
+                                            <td class="slider__popup-weight">70г</td>
+                                        </tr>
+                                        <tr class="slider__popup-line">
+                                            <td class="slider__popup-icon">
+                                                <svg class="slider__popup-img">
+                                                        <use xlink:href="../burgers/img/sprite.svg#sause"></use>
+                                                     </svg></td>
+                                            <td class="slider__popup-product">Соус</td>
+                                            <td class="slider__popup-weight">150г</td>
+                                        </tr>
+                                        <tr class="slider__popup-line">
+                                            <td class="slider__popup-icon">
+                                                <svg class="slider__popup-img">
+                                                    <use xlink:href="../burgers/img/sprite.svg#cucumber"></use>
+                                                    </svg></td>
+                                            <td class="slider__popup-product">Овощи</td>
+                                            <td class="slider__popup-weight">200г</td>
+                                        </tr>
+                                        <tr class="slider__popup-line">
+                                            <td class="slider__popup-icon">
+                                                <svg class="slider__popup-img">
+                                                     <use xlink:href="../burgers/img/sprite.svg#cheese"></use>
+                                                  </svg></td>
+                                            <td class="slider__popup-product">Сыр</td>
+                                            <td class="slider__popup-weight">80г</td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
+
                             <div class="slider__composition-extra">
                                 <svg class="slider__extra-icon">
                                             <use xlink:href="../burgers/img/sprite.svg#kkal"></use>
@@ -217,18 +246,18 @@
                             </div>
                         </div>
                         <div class="slider__image">
-                            <img src="../burgers/img/burger_slider.png" alt="бургер">
+                            <img src="../burgers/img/burger_slider.png" alt="бургер" class="slider__image-pic">
                         </div>
                     </div>
                     <div class="slider__right">
                         <h2 class="section__title slider__title">Dark beef burger</h2>
                         <div class="slider__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nisi quia mollitia fugiat ratione tempora distinctio, delectus voluptates quae at magnam a, dignissimos consequatur laudantium quas maiores modi quasi explicabo.</div>
                         <div class="slider__buy">
-                            <div class="slider__cost">
-                                <div class="slider__cost-num">500 </div>
-                                <span class="slider__cost-text">рублей </span>
+                            <div class="slider__buy-num">500 </div>
+                            <div class="slider__buy-text">рублей </div>
+                            <div class="slider__button">
+                                <a href="" class="button">Заказать</a>
                             </div>
-                            <a href="" class="button slider__button">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -253,7 +282,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="accordeon__item active">
+                        <li class="accordeon__item">
                             <h3 class="accordeon__item-link">Ричард Джеймс</h3>
                             <div class="accordeon__item-desc">
                                 <img src="../burgers/img/team/team_avatar.png" alt="Аватар" class="accordeon__item-avatar">
@@ -551,6 +580,7 @@
     <script src="../burgers/js/team.js"></script>
     <script src="../burgers/js/menu.js"></script>
     <script src="../burgers/js/aside.js"></script>
+    <script src="../burgers/js/slider.js"></script>
 </body>
 
 </html>

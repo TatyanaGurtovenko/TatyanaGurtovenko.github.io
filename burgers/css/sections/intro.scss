@@ -224,7 +224,7 @@
         &:first-child {
             margin: 0;
         }
-        &::before {
+        &:before {
             display: block;
             position: absolute;
             content: "";
@@ -235,15 +235,19 @@
             top: 50%;
             transform: translateY(-50%);
             left: rem(-19px);
+            @include tablets {
+                top: 0;
+                left: 50%;
+            }
+        }
+        @include tablets {
+            margin-left: 0;
         }
         &:first-child {
             &:before {
                 display: none;
             }
         }
-        //      @include tablets {
-        //           display: none;
-        //      }
     }
     &__link {
         color: rgb(255, 255, 255);
@@ -281,7 +285,7 @@
     border-radius: rem(4px);
     padding: rem(10px) rem(15px);
     background-color: $orange;
-    display: flex;
+    display: inline-flex;
     cursor: pointer;
     @include tablets {
         margin-right: rem(56px);
@@ -290,4 +294,15 @@
 
 .hidden {
     overflow: hidden;
+}
+
+.scroll__img {
+    width: rem(30px);
+    height: rem(15px);
+}
+
+.scroll {
+    position: absolute;
+    left: 50%;
+    bottom: rem(40px);
 }
