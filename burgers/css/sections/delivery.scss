@@ -195,3 +195,52 @@ textarea {
     border-radius: 50%;
     margin-right: rem(10px);
 }
+
+.form__popup {
+    display: none;
+    &-active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .7);
+    }
+    &-message {
+        font-size: rem(14px);
+        font-family: "Ubuntu";
+        color: rgb(47, 50, 52);
+        line-height: 1;
+        padding-bottom: rem(15px);
+        text-align: center;
+    }
+}
+
+.popup {
+    &__button {
+        background-color: $orange;
+        text-decoration: none;
+        font-size: rem(13px);
+        font-family: "Ubuntu";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1;
+        cursor: pointer;
+        border-radius: rem(4px);
+        padding: rem(10px) rem(20px);
+        border: none;
+    }
+    &__content {
+        background-color: #fff;
+        height: rem(105px);
+        width: rem(200px);
+        display: flex;
+        flex-direction: column;
+        border-radius: rem(4px);
+        justify-content: center;
+        align-items: center;
+    }
+}

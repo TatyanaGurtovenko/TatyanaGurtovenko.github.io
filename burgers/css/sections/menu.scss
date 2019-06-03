@@ -47,7 +47,7 @@
     &__item-block {
         display: none;
         width: 45vw;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(61, 62, 63, .8);
         color: #fff;
         padding: rem(60px), rem(30px), rem(60px), rem(30px);
     }
@@ -60,6 +60,9 @@
 
 .menu__item--active>.menu__item-block {
     display: block;
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .menu__item--active .menu__subtitle-link {

@@ -188,17 +188,21 @@
         height: rem(15px);
     }
     &__arrow-left {
+        left: rem(-45px);
+        transform: rotate(90deg);
+        @include tablets {
+            left: rem(-5px);
+        }
+    }
+    &__arrow-right {
         right: rem(-45px);
         transform: rotate(-90deg);
         @include tablets {
             right: rem(-5px);
         }
     }
-    &__arrow-right {
-        left: rem(-45px);
-        transform: rotate(90deg);
-        @include tablets {
-            left: rem(-5px);
-        }
+    &__part {
+        display: flex;
+        flex-direction: row;
     }
 }

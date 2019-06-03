@@ -11,6 +11,8 @@ $desktop: 1200px;
 @import "../../css/layout/base.scss";
 @import "../../css/layout/media.scss";
 @import "../sections/fonts.scss";
+@import "../carousel/owl.carousel.min.css";
+@import "../carousel/owl.theme.default.css";
 @import "./intro.scss";
 @import "./advntage.scss";
 @import "./reviews.scss";

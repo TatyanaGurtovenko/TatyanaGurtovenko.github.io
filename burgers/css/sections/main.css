@@ -1,5 +1,7 @@
 @import url(../layout/normalize.css);
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,500,700");
+@import url(../carousel/owl.carousel.min.css);
+@import url(../carousel/owl.theme.default.css);
 html {
   font-size: 16px; }
   @media screen and (max-width: 768px) {
@@ -299,7 +301,7 @@ h6 {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -865,7 +867,7 @@ h6 {
   .menu__item-block {
     display: none;
     width: 45vw;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(61, 62, 63, 0.8);
     color: #fff;
     padding: 3.75rem, 1.875rem, 3.75rem, 1.875rem; }
   .menu__text {
@@ -875,6 +877,9 @@ h6 {
 
 .menu__item--active > .menu__item-block {
   display: block; }
+  @media screen and (max-width: 768px) {
+    .menu__item--active > .menu__item-block {
+      width: 100%; } }
 
 .menu__item--active .menu__subtitle-link {
   color: #f9b43b; }
@@ -1158,6 +1163,64 @@ textarea {
   border-radius: 50%;
   margin-right: 0.625rem; }
 
+.form__popup {
+  display: none; }
+  .form__popup-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .form__popup-message {
+    font-size: 0.875rem;
+    font-family: "Ubuntu";
+    color: #2f3234;
+    line-height: 1;
+    padding-bottom: 0.9375rem;
+    text-align: center; }
+
+.popup__button {
+  background-color: #e45028;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  font-family: "Ubuntu";
+  color: white;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0.625rem 1.25rem;
+  border: none; }
+
+.popup__content {
+  background-color: #fff;
+  height: 6.5625rem;
+  width: 12.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .slider {
   width: 100%;
   position: relative;
@@ -1385,18 +1448,26 @@ textarea {
     width: 1.875rem;
     height: 0.9375rem; }
   .slider__arrow-left {
-    right: -2.8125rem;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
-    @media screen and (max-width: 768px) {
-      .slider__arrow-left {
-        right: -0.3125rem; } }
-  .slider__arrow-right {
     left: -2.8125rem;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg); }
     @media screen and (max-width: 768px) {
-      .slider__arrow-right {
+      .slider__arrow-left {
         left: -0.3125rem; } }
+  .slider__arrow-right {
+    right: -2.8125rem;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+    @media screen and (max-width: 768px) {
+      .slider__arrow-right {
+        right: -0.3125rem; } }
+  .slider__part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
