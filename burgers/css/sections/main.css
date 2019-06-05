@@ -885,11 +885,6 @@ h6 {
   color: #f9b43b; }
 
 .map {
-  background-image: url("../../img/map_bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: cover;
   position: relative; }
 
 .footer {
@@ -962,6 +957,10 @@ h6 {
   .footer__social-icon:hover {
     fill: #fff;
     cursor: pointer; }
+
+#map {
+  width: 600px;
+  height: 400px; }
 
 input {
   border: 0.125rem solid transparent;

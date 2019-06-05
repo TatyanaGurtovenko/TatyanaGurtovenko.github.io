@@ -1,9 +1,4 @@
 .map {
-    background-image: url("../../img/map_bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
     position: relative;
 }
 
@@ -66,4 +61,9 @@
         fill: #fff;
         cursor: pointer;
     }
+}
+
+#map {
+    width: 600px;
+    height: 400px;
 }

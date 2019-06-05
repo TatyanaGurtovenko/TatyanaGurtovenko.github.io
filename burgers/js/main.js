@@ -45,7 +45,7 @@ form.onsubmit = function(e) {
     const formData = new FormData(form);
     formData.append('to', 't.gurtovenko.sas@gmail.com');
     const request = new XMLHttpRequest();
-    request.open('POST', 'https://webdev-api.loftschool.com/sendmail/fail');
+    request.open('POST', ' https://webdev-api.loftschool.com/sendmail');
     request.send(formData);
     request.addEventListener('load', function() {
         const response = JSON.parse(request.response);
@@ -95,3 +95,16 @@ $('.slider__arrow-left').click(function(e) {
     e.preventDefault();
     owl.trigger('prev.owl.carousel');
 })
+
+//Яндекс карта 
+
+
+
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+        center: [55.75, 37.62],
+        zoom: 10
+    });
+}
