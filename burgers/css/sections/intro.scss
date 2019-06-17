@@ -287,9 +287,6 @@
     background-color: $orange;
     display: inline-flex;
     cursor: pointer;
-    @include tablets {
-        margin-right: rem(56px);
-    }
 }
 
 .hidden {
