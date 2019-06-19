@@ -1,0 +1,305 @@
+.section {
+  height: 100vh;
+  position: relative;
+}
+
+.aside {
+  z-index: 10;
+  position: fixed;
+  top: 20%;
+  right: rem(60px);
+  &__item {
+    margin: 0 0 rem(15px) 0;
+  }
+  &__link {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    width: rem(16px);
+    height: rem(16px);
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border-radius: 50%;
+      width: rem(8px);
+      height: rem(8px);
+    }
+  }
+}
+
+.aside__link--active {
+  border: rem(1px) solid #fff;
+}
+
+.button__nav {
+  z-index: 10;
+  display: none;
+  position: fixed;
+  width: rem(22px);
+  height: rem(22px);
+  top: rem(40px);
+  right: rem(30px);
+  cursor: pointer;
+  &-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &:before {
+      border-radius: rem(3px);
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+      transition: 0.3s;
+    }
+    &:after {
+      border-radius: rem(3px);
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+      transition: 0.3s;
+    }
+  }
+  &-line {
+    border-radius: rem(3px);
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  @include tablets {
+    display: block;
+  }
+}
+
+.button__nav.active {
+  .button__nav-line {
+    opacity: 0;
+  }
+  .button__nav-content {
+    &:before {
+      transform: rotate(45deg);
+      top: rem(10px);
+    }
+    &:after {
+      transform: rotate(-45deg);
+      top: rem(10px);
+    }
+  }
+}
+
+.intro {
+  background-image: url("../src/images/mainSection/video-bg.png");
+  background-size: cover;
+  background-position: center center;
+  &__content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - rem(100px));
+    margin: -rem(100px) 0 0 0;
+    @include tablets {
+      flex-direction: column;
+    }
+  }
+  &__text {
+    margin-top: rem(100px);
+    @include tablets {
+      margin: 0;
+    }
+  }
+}
+
+.intro-left,
+.intro-right {
+  width: 50%;
+  float: left;
+  @include tablets {
+    width: 100%;
+    float: none;
+  }
+}
+
+.intro-right {
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.intro-left {
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.header {
+  height: rem(100px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__nav {
+    display: flex;
+    align-items: center;
+    .button {
+      margin-left: rem(10px);
+    }
+    @include tablets {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 10);
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .logo__img {
+    margin-right: rem(70px);
+  }
+}
+
+.header__nav.active {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__img {
+  width: rem(90px);
+  height: rem(90px);
+}
+
+.burger__img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  @include tablets {
+    max-width: 80%;
+  }
+}
+
+.nav {
+  &__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    @include tablets {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    position: relative;
+    font-size: rem(13px);
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    line-height: 2.308;
+    margin-left: rem(30px);
+    &:first-child {
+      margin: 0;
+    }
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      height: rem(4px);
+      width: rem(4px);
+      background-color: white;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: rem(-19px);
+      @include tablets {
+        top: 0;
+        left: 50%;
+      }
+    }
+    @include tablets {
+      margin-left: 0;
+    }
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+  }
+}
+
+.intro__title {
+  color: $yellow;
+}
+
+.tagline {
+  font-size: rem(60px);
+  font-family: "lifehack_medium";
+  color: rgb(255, 255, 255);
+  line-height: 1.181;
+  text-transform: lowercase;
+  -moz-transform: matrix(1.00034537162918, 0, 0, 0.99971888136576, 0, 0);
+  -webkit-transform: matrix(1.00034537162918, 0, 0, 0.99971888136576, 0, 0);
+  -ms-transform: matrix(1.00034537162918, 0, 0, 0.99971888136576, 0, 0);
+  @include tablets {
+    font-size: rem(50px);
+  }
+}
+
+.button {
+  font-size: rem(13px);
+  font-family: "Ubuntu";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: rem(4px);
+  padding: rem(10px) rem(15px);
+  background-color: $orange;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.scroll__img {
+  width: rem(30px);
+  height: rem(15px);
+}
+
+.scroll {
+  position: absolute;
+  left: 50%;
+  bottom: rem(40px);
+}

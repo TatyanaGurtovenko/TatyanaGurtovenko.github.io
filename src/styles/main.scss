@@ -1,0 +1,15 @@
+//colors
+$yellow: #f9b43b;
+$orange: #e45028;
+$gray: #2f3234;
+//breackpoints
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+@import "../../src/styles/layout/base.scss";
+@import "../../src/styles/layout/media.scss";
+@import "../../src/styles/carousel/owl.carousel.min.css";
+@import "../../src/styles/carousel/owl.theme.default.css";
+@import "../../src/styles/blocks/*.scss";
+

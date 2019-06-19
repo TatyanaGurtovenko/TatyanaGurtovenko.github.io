@@ -1,0 +1,105 @@
+@function rem($px) {
+    @return $px / 16px+0rem;
+}
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+}
+
+html {
+    font-size: 16px;
+    @include tablets {
+        font-size: 15px;
+    }
+    @include phones {
+        font-size: 13px;
+    }
+}
+
+body {
+    position: relative;
+    font-size: rem(16px);
+}
+
+html,
+body {
+    height: 100%;
+    
+}
+
+ul,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    max-width: rem(940px);
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mainContent {
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
+}
+.section {
+    height: 100%;
+   
+}
+
+.section__title {
+    font-size: rem(72px);
+    font-family: "gagalinregular";
+    line-height: 1.181;
+    -moz-transform: matrix(1.00034537162918, 0, 0, 0.99971888136576, 0, 0);
+    -webkit-transform: matrix(1.00034537162918, 0, 0, 0.99971888136576, 0, 0);
+    -ms-transform: matrix(1.00034537162918, 0, 0, 0.99971888136576, 0, 0);
+    @include phones {
+        font-size: rem(63px);
+    }
+}

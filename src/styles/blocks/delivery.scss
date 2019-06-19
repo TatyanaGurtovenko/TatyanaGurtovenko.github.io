@@ -1,0 +1,246 @@
+input {
+    border: rem(2px) solid transparent;
+    border-radius: rem(4px);
+    outline: none;
+    &:focus {
+        border: rem(2px) solid $yellow;
+    }
+    &[type=radio] {
+        display: none;
+    }
+    &[type=checkbox] {
+        display: none;
+    }
+    &[type=checkbox]:checked+.checkbox__label:before {
+        background-image: url('../src/images/delivery/check.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &[type=radio]:checked+.radio-label:before {
+        background-image: url("../src/images/Ellipse.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+textarea {
+    border: rem(2px) solid transparent;
+    border-radius: rem(4px);
+    outline: none;
+    &:focus {
+        border: rem(2px) solid $yellow;
+    }
+}
+
+.container__delivery {
+    align-items: center;
+}
+
+.delivery {
+    background-image: url("../src/images/delivery/delivery_bg.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &__title {
+        color: rgb(249, 180, 59);
+        line-height: 1;
+        margin-bottom: rem(40px);
+        text-align: center;
+    }
+    &__form {
+        display: flex;
+        font-size: rem(14px);
+        font-family: "Ubuntu";
+        color: rgb(255, 255, 255);
+        line-height: 1;
+        -moz-transform: matrix(1, 0, 0, 0.99986602382128, 0, 0);
+        -webkit-transform: matrix(1, 0, 0, 0.99986602382128, 0, 0);
+        -ms-transform: matrix(1, 0, 0, 0.99986602382128, 0, 0);
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+    &__form-part {
+        float: left;
+        width: rem(460px);
+        @include tablets {
+            margin-left: 0;
+            width: 99%;
+        }
+    }
+    &__form-part_left {
+        margin-right: rem(20px);
+        @include tablets {
+            margin-right: 0;
+        }
+    }
+    &__form-input {
+        font-size: rem(14px);
+        padding: rem(10px);
+        padding: rem(5px) rem(10px);
+        width: 100%;
+    }
+    &__form-textarea {
+        height: rem(110px);
+        margin-bottom: rem(13px);
+    }
+    &__form-label {
+        display: block;
+        width: 100%;
+    }
+    &__form-block {
+        width: 100%;
+    }
+    &__form-person {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: rem(20px);
+        @include phones {
+            grid-gap: rem(10px);
+        }
+    }
+    &__form-adress {
+        margin-top: rem(20px);
+        display: flex;
+        justify-content: space-between;
+    }
+    &__adress-list {
+        margin-top: rem(20px);
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: rem(20px);
+        @include phones {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: rem(10px);
+        }
+    }
+    &__adress-item {
+        width: 100%;
+    }
+    &__adress-street {
+        margin-top: rem(20px);
+    }
+    &__item-input {
+        height: rem(35px);
+        width: rem(100px);
+    }
+    &__input-title {
+        margin-bottom: rem(10px);
+        @include phones {
+            margin-bottom: rem(5px);
+        }
+    }
+    &__form-block_none {
+        @include phones {
+            display: none;
+        }
+    }
+    &__comment-input {
+        width: rem(460px);
+        height: rem(110px);
+        margin-bottom: rem(15px);
+    }
+    &__extra-order {
+        display: flex;
+        align-items: center;
+    }
+    &__extra-radio {
+        margin-bottom: rem(17px);
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    &__extra-checkbox {
+        margin-bottom: rem(20px);
+    }
+    &__button {
+        margin-right: rem(20px);
+        border: none;
+        outline: none;
+    }
+}
+
+.checkbox__label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox__label:before {
+    content: '';
+    display: inline-block;
+    width: rem(15px);
+    height: rem(15px);
+    background: #ffffff;
+    margin-right: rem(10px);
+}
+
+.radio-label {
+    cursor: pointer;
+    margin-right: rem(20px);
+    display: flex;
+    align-items: center;
+}
+
+.radio-label:before {
+    content: '';
+    display: inline-block;
+    width: rem(15px);
+    height: rem(15px);
+    background: #ffffff;
+    border-radius: 50%;
+    margin-right: rem(10px);
+}
+
+.form__popup {
+    display: none;
+    &-active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .7);
+    }
+    &-message {
+        font-size: rem(14px);
+        font-family: "Ubuntu";
+        color: rgb(47, 50, 52);
+        line-height: 1;
+        padding-bottom: rem(15px);
+        text-align: center;
+    }
+}
+
+.popup {
+    &__button {
+        background-color: $orange;
+        text-decoration: none;
+        font-size: rem(13px);
+        font-family: "Ubuntu";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1;
+        cursor: pointer;
+        border-radius: rem(4px);
+        padding: rem(10px) rem(20px);
+        border: none;
+    }
+    &__content {
+        background-color: #fff;
+        height: rem(105px);
+        width: rem(200px);
+        display: flex;
+        flex-direction: column;
+        border-radius: rem(4px);
+        justify-content: center;
+        align-items: center;
+    }
+}
